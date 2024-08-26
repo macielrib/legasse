@@ -1,0 +1,44 @@
+// Hero
+Title: Cortina Motorizada: Estilo e Privacidade para Seu Espaço
+
+Description: Encontre cortinas e persianas que oferecem estilo e privacidade, combinando funcionalidade e design para o seu espaço.
+
+// Sobre
+Title: Cortina Motorizada
+
+Description: Cortinas e persianas motorizadas, sem fio, podem ser controladas por controle remoto, aplicativo ou comandos de voz, ideais para janelas altas. Elas automatizam o equilíbrio entre luz natural e artificial e podem ser programadas para abrir e fechar conforme a sua rotina.
+
+// Inteligente
+Title: Sua casa inteligente!
+
+Description: 
+Você no controle da sua casa, movimentando persianas e cortinas com um smartphone, tablet ou apenas com o som da sua voz.
+
+Prefere pegar o telefone para fechar as cortinas ou está ansioso para usar comandos de voz com o Amazon Alexa ou o Google Assistente?
+
+// Beneficios
+Title: Elegância com Conveniência
+
+Description: Cortinas são sinônimo de elegância, adicionando um toque refinado ao ambiente. Além de controlar a luz, elas complementam a decoração, trazendo charme e sofisticação para qualquer espaço.
+
+/ Conveniência Avançada
+Controle todas as cortinas da sua casa com um único dispositivo ou programe-as para abrir e fechar automaticamente. Ideal para simular presença durante viagens e aumentar a segurança.
+
+/ Estilo Sofisticado
+As cortinas motorizadas adicionam um toque de classe a qualquer ambiente, com opções de estilos, tecidos e designs que combinam com a estética do seu espaço.
+
+/ Preservação de Materiais
+juste a entrada de luz para proteger seus móveis e objetos de decoração, evitando o desgaste causado pela exposição solar excessiva.
+
+/ Eficiência Energética
+Programe as cortinas para se ajustarem conforme a luz solar, reduzindo o uso de ar condicionado ou aquecimento e economizando energia.
+
+// Produtos
+Title: Nossas cortinas para mudar o seu ambiente
+
+Description: Nossas cortinas para mudar o seu ambiente
+
+// Tecidos
+Title: Tipos de Tecidos
+
+Description: Oferecemos tecidos leves que filtram a luz suavemente e opções mais pesadas que garantem total privacidade e bloqueio de luz.

@@ -1,0 +1,43 @@
+// Hero
+Title: Alexa, vamos assistir um filme? Ok Google, modo Relax
+
+Description: O sistema de aspiração central proporciona limpeza eficiente e silenciosa, mantendo sua casa saudável e livre de poeira.
+
+// Beneficios
+Title: Conforto, Economia e Controle Total
+
+Description: A automação residencial transforma sua casa em um ambiente inteligente, integrando tecnologia para um estilo de vida mais conveniente e eficiente.
+
+/ Economia na conta de energia
+
+/ Praticidade em tarefas diárias
+
+/ Sem cabeamento
+
+/ Conforto de ligar, desligar apenas falando
+
+// Processo
+Title: Casa inteligente e totalmente personalizada
+
+/ Análise
+A Legasse oferece uma equipe especializada para concretizar seu projeto de automação residencial, aplicando a melhor solução conforme suas necessidades e projetos luminotécnicos.
+
+/Instalação
+Nossa equipe técnica realiza acompanhamento e instalação limpa dos produtos com o mais alto padrão de qualidade.
+
+/Programação
+Mantenha o ar fresco e seco em sua casa, eliminando a umidade excessiva que pode causar ácaros, mofo e bolor, graças à calefação
+
+// App
+Title: Controle Total da Sua Casa
+
+/ TV e Sonorização
+
+/ Iluminação
+Interruptores inteligentes. Controle de luzes através do app e automatização de cenas. Também pode controlar a intensidade da luz.
+
+/ Climatização
+
+/ Cortinas
+
+/ Corporativo

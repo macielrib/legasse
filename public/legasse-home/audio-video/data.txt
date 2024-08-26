@@ -1,0 +1,36 @@
+// Hero
+Title: Cinema em Casa: Imersão e Conforto na Sua Casa
+
+Description: Transforme sua sala em um cinema com sistemas avançados de áudio e vídeo, proporcionando uma experiência imersiva e confortável para toda a família.
+
+// Servicos
+Title: Soluções de áudio e vídeo personalizadas
+
+Description: A Legasse oferece soluções completas de áudio e vídeo para transformar qualquer ambiente da sua casa. Nossa equipe especializada garante a integração perfeita entre tecnologia e design, proporcionando uma experiência audiovisual de alta qualidade.
+
+/ Consultoria Especializada
+Avaliação das suas necessidades e preferências para criar um projeto personalizado.
+
+/ Equipamentos de Última Geração
+Realizamos o dimensionamento das cargas elétricas, calculando a capacidade dos circuitos e condutores conforme normas vigentes.
+
+/ Instalação Profissional
+Equipe técnica qualificada realiza a instalação com precisão e cuidado.
+
+/ Integração com Automação Residencial
+Controle fácil e eficiente dos sistemas de áudio e vídeo através da automação da sua casa.
+
+// Solucoes
+Title: Experiência Audiovisual Imersiva
+
+/ 1. Som Ambiente
+Sistemas de som distribuído que permitem ouvir música em diferentes cômodos, com controle individual de volume e fonte para criar a atmosfera ideal em qualquer ambiente.
+
+/ 2. Home Theater
+Salas de cinema em casa com tecnologia avançada, incluindo projetores de alta definição e som surround, proporcionando uma experiência cinematográfica de alta qualidade no conforto da sua casa.
+
+/ 3. Sistemas de Entretenimento
+Integração de televisores, projetores e sistemas de som em um único sistema, garantindo a melhor qualidade de imagem e áudio para todos os seus momentos de lazer.
+
+/ 4. Controle Inteligente
+Soluções de controle intuitivas para gerenciar todos os dispositivos de áudio e vídeo com facilidade, usando controle remoto ou aplicativos móveis, oferecendo conveniência e simplicidade.

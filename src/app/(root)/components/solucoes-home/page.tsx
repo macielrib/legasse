@@ -1,0 +1,84 @@
+"use client";
+
+import { MdDesktopMac } from "react-icons/md";
+import Image from 'next/image';
+import Link from 'next/link';
+import { Reveal } from "@/app/components/RevealScroll";
+
+const SolucoesHome: React.FC = () => {
+  const cards = [
+    {
+      nome: 'Áudio e Vídeo',
+      imagem: '/assets/legasse-home/audiovideo-thumb.png',
+      link: '/legasse-home/audio-video'
+    },
+    {
+      nome: 'Piso Aquecido',
+      imagem: '/assets/legasse-home/pisoaquecido-thumb.png',
+      link: '/legasse-home/piso-aquecido'
+    },
+    {
+      nome: 'Aspiração Central',
+      imagem: '/assets/legasse-home/aspiracao-thumb.png',
+      link: '/legasse-home/aspiracao-central'
+    },
+    {
+      nome: 'Lareiras',
+      imagem: '/assets/legasse-home/lareiras-thumb.png',
+      link: '/legasse-home/lareiras'
+    },
+    {
+      nome: 'Cortinas e Persianas',
+      imagem: '/assets/legasse-home/cortinaspersianas-thumb.png',
+      link: '/legasse-home/cortina'
+    },
+    {
+      nome: 'Automação',
+      imagem: '/assets/legasse-home/automacao-thumb.png',
+      link: '/legasse-home/automacao'
+    },
+  ];
+
+  return (
+
+     <section className="py-12 lg:px-8 bg-[#f6f4ef] border-b-2 border border-b-yellow-500 border-t-neutral-200">
+
+   <Reveal>
+   <div className="container mx-auto px-6 lg:mt-16">
+        <div className="text-left md:text-left mb-8">
+          <h2 className="text-4xl md:text-6xl font-bold mb-4 font-baijam">
+            Conforto Inteligente,<br/> Soluções em <span className="text-[#F9BC0B] inline-flex items-center gap-2">Home</span>
+          </h2>
+          <p className="text-md font-dmsans font-medium text-black mb-8">
+            Transforme sua casa em um <strong>ambiente confortável</strong>, seguro e <br/>tecnologicamente avançado com a Legasse.
+          </p>
+        </div>
+
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          {cards.map((card, index) => (
+            <Link key={index} href={card.link} passHref legacyBehavior>
+              <a className="relative overflow-hidden rounded-lg shadow-lg bg-white transition-transform transform hover:scale-105 group">
+                <Image
+                  src={card.imagem}
+                  alt={card.nome}
+                  width={600}
+                  height={300}
+                  className="w-full h-96 object-cover"
+                />
+                <div className="absolute bottom-4 left-4 flex items-center space-x-2">
+                  <h3 className="text-white text-xl font-medium font-dmsans">{card.nome}</h3>
+                  <MdDesktopMac className="text-yellow-500 text-2xl" />
+                </div>
+        
+              </a>
+            </Link>
+          ))}
+        </div>
+      </div>
+   </Reveal>
+    </section>
+
+  );
+};
+
+export default SolucoesHome;
