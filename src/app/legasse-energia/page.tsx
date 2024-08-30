@@ -10,6 +10,7 @@ import ErrosDoProjeto from "./components/erros-projeto/page";
 import ProjetosEletricos from "./components/projetos-eletricos/page";
 import Spda from "./components/spda/page";
 import Compatibilizacao from "./components/compatibilizacao/page";
+import StatsSection from "../components/StatsSection";
 
 const LegasseEnergia: React.FC = () => {
   return (
@@ -45,30 +46,7 @@ const LegasseEnergia: React.FC = () => {
         </div>
 
         {/* Card com Estatísticas */}
-        <div className="absolute inset-x-0 bottom-[-0rem] mx-auto max-w-xl bg-[#101010] p-6 rounded-xl shadow-lg flex justify-between items-center space-x-6 transform translate-y-1/2 transition duration-300 hover:scale-105">
-          <div className="flex items-center space-x-6">
-            <GrMap className="text-white text-6xl" />
-            <div>
-              <p className="text-white text-3xl font-baijam font-semibold">
-                +55.000m²
-              </p>
-              <p className="text-[#F9BC0B] text-lg font-baijam font-semibold">
-                projetados em BIM
-              </p>
-            </div>
-          </div>
-          <div className="flex items-center space-x-6">
-            <RiDoorOpenLine className="text-white text-6xl" />
-            <div>
-              <p className="text-white text-3xl font-baijam font-semibold">
-                +10
-              </p>
-              <p className="text-[#F9BC0B] text-lg font-baijam font-semibold">
-                Empreendimentos
-              </p>
-            </div>
-          </div>
-        </div>
+        <StatsSection />
       </section>
       <ErrosDoProjeto />
       <ComoBimAjuda />

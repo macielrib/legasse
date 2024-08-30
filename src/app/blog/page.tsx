@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation } from "swiper/modules";
+import { Autoplay, Navigation } from "swiper/modules";
 import Image from "next/image";
 import Link from "next/link";
 import ArticlesBlog from "./components/articles/page";
@@ -54,10 +54,11 @@ const BlogPage: React.FC = () => {
 
           {/* Swiper Slide */}
           <Swiper
-            modules={[Navigation]}
+            modules={[Navigation, Autoplay]}
             spaceBetween={40} // Aumente o espaço entre os slides para garantir que as fendas sejam visíveis
             slidesPerView={1.8} // Ajuste para garantir que ambos os lados sejam visíveis
-            centeredSlides={false}
+         
+            autoplay={{ delay: 1500 }}
             loop={true} // Permite o loop infinito
             className="relative w-full "
           >

@@ -93,7 +93,7 @@ const Navbar: React.FC = () => {
             >
               <Link href={item.path} legacyBehavior>
                 <a
-                  className={`text-md md:text-2xl font-medium font-dmsans leading-relaxed transition duration-300 ${
+                  className={`text-md md:text-2xl font-normal font-dmsans leading-relaxed transition duration-300 ${
                     pathname === item.path
                       ? "text-yellow-500"
                       : isBlogPage

@@ -31,7 +31,7 @@ const Processo: React.FC = () => {
      <Reveal>
      <div className="container mx-auto px-6 md:px-12 flex flex-col md:flex-row items-start gap-12">
           {/* Texto e Tópicos à Esquerda */}
-          <div className="md:w-1/2">
+          <div className="md:w-7/12">
             <h2 className="text-4xl md:text-5xl font-bold font-baijam text-white mb-16">
               Casa inteligente e totalmente <br/><span className="text-yellow-500">personalizada.</span>
             </h2>
@@ -51,13 +51,13 @@ const Processo: React.FC = () => {
           </div>
 
           {/* Imagem à Direita */}
-          <div className="md:w-1/2 flex justify-center items-center transition duration-300 hover:scale-105">
+          <div className="md:w-1/2  flex justify-center items-center transition duration-300 hover:scale-105">
             <Image
               src="/legasse-home/automacao/assets/processo.png"
               alt="Piso Aquecido 1"
               width={600}
               height={400}
-              className="object-cover w-full h-auto rounded-xl"
+              className="object-cover w-full max-w-xl  rounded-xl"
             />
           </div>
         </div>

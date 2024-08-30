@@ -103,7 +103,7 @@ const Beneficios: React.FC = () => {
           </div>
 
           {/* Imagem à Esquerda */}
-          <div className="md:w-1/2 flex justify-center items-center transition duration-300 hover:scale-105">
+          <div className="md:w-8/12 flex justify-center items-center transition duration-300 hover:scale-105">
             <Image
        src="/legasse-home/piso-aquecido/pisoaquecido02.png"
               alt="Telecomunicação e Automação"

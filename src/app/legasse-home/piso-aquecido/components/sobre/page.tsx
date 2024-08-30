@@ -17,7 +17,7 @@ const SobrePiso: React.FC = () => {
             alt="Piso Aquecido"
             width={600}
             height={400}
-            className="object-cover w-full max-w-xl"
+            className="object-cover w-full max-w-lg"
           />
         </div>
 

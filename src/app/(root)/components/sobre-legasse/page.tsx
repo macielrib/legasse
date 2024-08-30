@@ -8,20 +8,14 @@ import { Reveal } from "@/app/components/RevealScroll";
 const AboutSection: React.FC = () => {
   return (
 
-     <section className="bg-white py-16 px-6 md:px-12" id="sobre-legasse">
+     <section className="bg-white py-16 px-6 md:px-6" id="sobre-legasse">
        <Reveal>
       <div className="container mx-auto flex flex-col md:flex-row items-center justify-center gap-12">
         
-        <div className="w-full flex flex-col items-start">
-          <span className="text-black font-dmsans font-bold text-lg ">
-           Excelência em <span className="text-yellow-700 font-black inline-flex items-center gap-1">cada conexão <PiAtomFill/></span>
-          </span>
+        <div className="w-full flex flex-col items-start px-4">
+     
           <h2 className="text-4xl md:text-5xl font-baijam font-bold mb-4">
-            Inovação em soluções de<br/> energia{" "}
-            <span className="text-yellow-500 inline-flex items-center gap-2">
-              &
-            </span>{" "}
-            tecnologia.
+          Sobre a <span className="text-yellow-500">Legasse</span>
           </h2>
           <p className="text-lg max-w-2xl font-dmsans font-medium mb-10 text-left">
             Garantimos qualidade e profissionalismo em cada projeto, superando
