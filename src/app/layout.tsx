@@ -3,7 +3,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
-import Head from "next/head";
+import Script from "next/script"; // Importa o componente Script
 
 import "swiper/css";
 import "swiper/css/navigation";
@@ -56,17 +56,20 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-br">
-      <Head>
+      <head>
         <link
           rel="stylesheet"
           href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
         />
-        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-      </Head>
+      </head>
       <body className={inter.className}>
         <Navbar />
         {children}
         <Footer />
+        <Script
+          src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"
+          strategy="lazyOnload" // Carrega o script de forma assíncrona após o carregamento da página
+        />
       </body>
     </html>
   );
