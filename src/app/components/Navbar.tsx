@@ -61,7 +61,7 @@ const Navbar: React.FC = () => {
   return (
     <nav
       className={`fixed w-full py-1 px-2 z-50 transition-all duration-300 ${
-        isScrolled || isBlogPage ? "bg-transparent" : "bg-transparent"
+        isScrolled || isBlogPage ? "bg-black" : "bg-transparent"
       }`}
     >
       <div className="container mx-auto px-6 py-2 flex flex-wrap justify-between gap-2 items-center">
@@ -76,36 +76,42 @@ const Navbar: React.FC = () => {
             />
             <span
               className={`ml-3 text-3xl md:text-4xl font-baijam font-normal uppercase ${
-                isBlogPage ? "text-black" : "text-white"
+                isScrolled || isBlogPage ? "text-white" : "text-white"
               }`}
             >
               LEGASSE
             </span>
           </Link>
         </div>
-        <div className="hidden md:flex items-center space-x-8">
+        <div className="hidden md:flex items-center space-x-4">
           {navItems.map((item, index) => (
             <div
               key={index}
               onMouseEnter={() => setShowDropdown(item.dropdown ? true : false)}
               onMouseLeave={() => setShowDropdown(false)}
-              className="relative"
+              className="relative flex items-center"
             >
               <Link href={item.path} legacyBehavior>
                 <a
-                  className={`text-md md:text-2xl font-normal font-dmsans leading-relaxed transition duration-300 ${
+                  className={`text-md md:text-xl font-normal font-dmsans leading-relaxed transition duration-300 ${
                     pathname === item.path
                       ? "text-yellow-500"
-                      : isBlogPage
-                      ? "text-black"
+                      : isScrolled || isBlogPage
+                      ? "text-white"
                       : "text-white"
                   } hover:text-yellow-500 hover:scale-105`}
                 >
                   {item.name}
                 </a>
               </Link>
+              {index < navItems.length - 1 && (
+                <span className="mx-2 text-yellow-500">|</span> // Adiciona o divisor amarelo
+              )}
               {item.dropdown && showDropdown && (
-                <div className="absolute top-full left-1/2 transform -translate-x-1/2 bg-white shadow-lg rounded-md p-6 flex space-x-12">
+                <div
+                  className="absolute top-full mt-2 left-1/2 transform -translate-x-1/2 bg-white shadow-lg rounded-md p-6 flex space-x-12"
+                  style={{ minWidth: "300px" }} // Define uma largura mínima para evitar bugs
+                >
                   {item.dropdown.map((col, colIndex) => (
                     <div key={colIndex} className="w-64">
                       <h3 className="font-baijam font-semibold text-black text-lg mb-3">
