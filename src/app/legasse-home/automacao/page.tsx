@@ -27,7 +27,7 @@ const Automacao = () => {
 
           {/* Descrição */}
           <p className="text-md md:text-lg text-white font-dmsans font-normal max-w-2xl">
-          O sistema de aspiração central proporciona limpeza eficiente e silenciosa, mantendo sua casa saudável e livre de poeira.
+          O sistema de automação residencial proporciona controle eficiente e intuitivo, tornando sua casa mais inteligente e conveniente.
           </p>
 
           {/* Botão de Contato */}

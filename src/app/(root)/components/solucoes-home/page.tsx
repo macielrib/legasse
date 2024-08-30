@@ -51,7 +51,7 @@ const SolucoesHome: React.FC = () => {
         <div className="container mx-auto px-4 lg:mt-16">
           <div className="text-left md:text-left mb-8">
             <h2 className="text-4xl md:text-6xl font-bold mb-4 font-baijam">
-              Conforto inteligente,<br/> soluções em <span className="text-[#F9BC0B] inline-flex items-center gap-2">home</span>
+              Soluções <span className="text-[#F9BC0B] inline-flex items-center gap-2">Home</span>
             </h2>
             <p className="text-md font-dmsans font-medium text-black mb-8">
               Transforme sua casa em um <strong>ambiente confortável</strong>, seguro e <br/>tecnologicamente avançado com a Legasse.

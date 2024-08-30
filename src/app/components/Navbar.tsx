@@ -1,7 +1,7 @@
 "use client";
 
 import { IoMdMenu, IoMdClose } from "react-icons/io";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
@@ -10,6 +10,7 @@ const Navbar: React.FC = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
   const [showDropdown, setShowDropdown] = useState(false);
+  const dropdownRef = useRef<HTMLDivElement>(null);
   const pathname = usePathname();
   const isBlogPage = pathname.startsWith("/blog");
 
@@ -22,23 +23,38 @@ const Navbar: React.FC = () => {
         {
           title: "Soluções Home",
           items: [
-            "Áudio e Vídeo",
-            "Piso Aquecido",
-            "Aspiração Central",
-            "Lareiras",
-            "Cortinas e Persianas",
-            "Automação",
+            { name: "Áudio e Vídeo", path: "/legasse-home/audio-video" },
+            { name: "Piso Aquecido", path: "/legasse-home/piso-aquecido" },
+            {
+              name: "Aspiração Central",
+              path: "/legasse-home/aspiracao-central",
+            },
+            { name: "Lareiras", path: "/legasse-home/lareiras" },
+            {
+              name: "Cortinas e Persianas",
+              path: "/legasse-home/cortinas-persianas",
+            },
+            { name: "Automação", path: "/legasse-home/automacao" },
           ],
         },
         {
           title: "Soluções Energia",
           items: [
-            "Energia Solar",
-            "Projeto Elétrico",
-            "Telecomunicação / Automação",
-            "Projetos de SPDA",
-            "Laudos",
-            "Modelagem BIM",
+            { name: "Energia Solar", path: "/legasse-energia/energia-solar" },
+            {
+              name: "Projeto Elétrico",
+              path: "/legasse-energia/projeto-eletrico",
+            },
+            {
+              name: "Telecomunicação e Automação",
+              path: "/legasse-energia/telecomunicacao-automacao",
+            },
+            {
+              name: "Projetos de SPDA",
+              path: "/legasse-energia/projetos-spda",
+            },
+            { name: "Laudos", path: "/legasse-energia/laudos" },
+            { name: "Modelagem BIM", path: "/legasse-energia/modelagem-bim" },
           ],
         },
       ],
@@ -52,11 +68,27 @@ const Navbar: React.FC = () => {
       setIsScrolled(window.scrollY > 50);
     };
 
+    const handleClickOutside = (event: MouseEvent) => {
+      if (
+        dropdownRef.current &&
+        !dropdownRef.current.contains(event.target as Node)
+      ) {
+        setShowDropdown(false);
+      }
+    };
+
     window.addEventListener("scroll", handleScroll);
+    document.addEventListener("mousedown", handleClickOutside);
+
     return () => {
       window.removeEventListener("scroll", handleScroll);
+      document.removeEventListener("mousedown", handleClickOutside);
     };
   }, []);
+
+  const toggleDropdown = () => {
+    setShowDropdown((prev) => !prev);
+  };
 
   return (
     <nav
@@ -85,32 +117,33 @@ const Navbar: React.FC = () => {
         </div>
         <div className="hidden md:flex items-center space-x-4">
           {navItems.map((item, index) => (
-            <div
-              key={index}
-              onMouseEnter={() => setShowDropdown(item.dropdown ? true : false)}
-              onMouseLeave={() => setShowDropdown(false)}
-              className="relative flex items-center"
-            >
-              <Link href={item.path} legacyBehavior>
-                <a
-                  className={`text-md md:text-xl font-normal font-dmsans leading-relaxed transition duration-300 ${
-                    pathname === item.path
-                      ? "text-yellow-500"
-                      : isScrolled || isBlogPage
-                      ? "text-white"
-                      : "text-white"
-                  } hover:text-yellow-500 hover:scale-105`}
-                >
-                  {item.name}
-                </a>
-              </Link>
+            <div key={index} className="relative flex items-center">
+              <button
+                onClick={() => item.dropdown && toggleDropdown()}
+                className={`text-md md:text-xl font-normal font-dmsans leading-relaxed transition duration-300 relative group ${
+                  pathname === item.path
+                    ? "text-yellow-500"
+                    : isScrolled || isBlogPage
+                    ? "text-white"
+                    : "text-white"
+                } hover:text-yellow-500 hover:scale-105`}
+              >
+                {item.name}
+                {item.dropdown && (
+                  <span className="absolute top-[-1.5rem] left-1/2 transform -translate-x-1/2 bg-black text-white text-xs font-medium px-2 py-1 rounded-md whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    Clique para ver mais
+                  </span>
+                )}
+              </button>
+
               {index < navItems.length - 1 && (
-                <span className="mx-2 text-yellow-500">|</span> // Adiciona o divisor amarelo
+                <span className="mx-2 text-yellow-500">|</span>
               )}
               {item.dropdown && showDropdown && (
                 <div
-                  className="absolute top-full mt-2 left-1/2 transform -translate-x-1/2 bg-white shadow-lg rounded-md p-6 flex space-x-12"
-                  style={{ minWidth: "300px" }} // Define uma largura mínima para evitar bugs
+                  ref={dropdownRef}
+                  className="absolute top-full left-1/2 transform -translate-x-1/2 bg-white shadow-lg rounded-md p-6 flex space-x-12 mt-1.5 z-40"
+                  style={{ minWidth: "300px" }}
                 >
                   {item.dropdown.map((col, colIndex) => (
                     <div key={colIndex} className="w-64">
@@ -119,11 +152,15 @@ const Navbar: React.FC = () => {
                       </h3>
                       <ul className="space-y-2">
                         {col.items.map((subItem, subIndex) => (
-                          <li
-                            key={subIndex}
-                            className="text-black font-dmsans font-medium hover:text-yellow-500 cursor-pointer transition"
-                          >
-                            {subItem}
+                          <li key={subIndex}>
+                            <Link href={subItem.path} legacyBehavior>
+                              <a
+                                className="text-black font-dmsans font-medium hover:text-yellow-500 cursor-pointer transition"
+                                onClick={() => setShowDropdown(false)}
+                              >
+                                {subItem.name}
+                              </a>
+                            </Link>
                           </li>
                         ))}
                       </ul>
