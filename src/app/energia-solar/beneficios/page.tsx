@@ -16,9 +16,9 @@ const Beneficios: React.FC = () => {
               <span className="text-yellow-500 inline-flex items-center gap-2">
                 Benefícios
               </span>{" "}
-              da Energia
+              da energia
               <br />
-              Solar São Bem Conhecidos
+              solar são bem conhecidos
             </h2>
 
             <ul className="space-y-4">

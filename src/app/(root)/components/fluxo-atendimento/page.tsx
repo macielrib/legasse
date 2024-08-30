@@ -9,12 +9,12 @@ const FluxoAtendimento: React.FC = () => {
     <section className="py-12 bg-[#f6f4ef] border border-t-neutral-200" id="nossos-servicos">
       <Reveal>
      
-        <div className="container mx-auto px-6">
+        <div className="container mx-auto px-12">
           <div className="text-left mb-12">
             <h2 className="text-4xl md:text-6xl font-baijam font-bold mb-4">
-              Como Funciona?
+              Como funciona?
               <br />
-              <span className="text-yellow-500">Fluxo de Atendimento</span>
+              <span className="text-yellow-500">Fluxo de atendimento</span>
             </h2>
             <p className="text-lg font-dmsans font-medium text-black max-w-2xl">
               Para garantir a máxima <strong>eficiência</strong> e satisfação do
@@ -22,7 +22,7 @@ const FluxoAtendimento: React.FC = () => {
             </p>
           </div>
 
-          <div className="flex flex-col md:flex-row items-center gap-2 md:px-8">
+          <div className="flex flex-col md:flex-row items-center gap-2 md:px-4">
             <div className="grid grid-cols-1 md:grid-cols-4 gap-12">
               {/* Primeira Linha */}
               <div className="flex flex-col items-start">

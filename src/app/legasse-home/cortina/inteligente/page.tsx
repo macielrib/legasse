@@ -13,7 +13,7 @@ const Inteligente: React.FC = () => {
           {/* Texto e Tópicos à Esquerda */}
           <div className="w-full">
             <h2 className="text-4xl md:text-5xl font-bold font-baijam text-white mb-4">
-              Sua Casa <span className="text-yellow-500">Inteligente!</span>
+              Sua casa <span className="text-yellow-500">inteligente!</span>
             </h2>
             <p className="text-md md:text-lg text-[#ccc] font-dmsans font-medium mb-12">
               Você no controle da sua casa, movimentando persianas e cortinas

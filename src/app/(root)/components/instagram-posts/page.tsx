@@ -12,7 +12,7 @@ const InstagramSection: React.FC = () => {
       <div className="container mx-auto">
         <div className="text-left mb-12">
           <h2 className="text-4xl md:text-6xl font-baijam font-bold mb-4">
-            Conecte-se Conosco:<br/><span className="text-yellow-500">Siga-nos</span> no Instagram!
+            Conecte-se conosco:<br/><span className="text-yellow-500">Siga-nos</span> no instagram!
           </h2>
           <p className="text-lg font-dmsans font-medium text-black max-w-2xl">
             Confira as últimas novidades e acompanhe nossos projetos<br/> nas nossas <b>contas no Instagram.</b>

@@ -21,7 +21,7 @@ const Beneficios: React.FC = () => {
         {/* Texto e Tópicos */}
         <div className="md:w-7/12">
           <h2 className="text-4xl md:text-5xl font-bold font-baijam text-black mb-6">
-           Benefícios da Aspiração Central
+           Benefícios da aspiração central
           </h2>
    
 

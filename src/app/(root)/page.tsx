@@ -12,6 +12,7 @@ import ClientesSection from "./components/clientes/page";
 import LocationSection from "./components/localizar/page";
 import Navbar from "../components/Navbar";
 import { Reveal } from "../components/RevealScroll";
+import BlogSection from "./components/blog/page";
   
 
 const Hero: React.FC = () => {
@@ -66,6 +67,7 @@ const Hero: React.FC = () => {
  <FluxoAtendimento/>
  <InstagramSection/>
  <ClientesSection/>
+ <BlogSection/>
  <LocationSection/>
     </>
   );

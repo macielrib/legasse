@@ -24,7 +24,7 @@ const SobrePiso: React.FC = () => {
         {/* Texto à Direita */}
         <div className="md:w-1/2">
           <h2 className="text-4xl md:text-5xl font-bold font-baijam text-black mb-6">
-            Sobre o Piso Aquecido
+            Sobre o piso aquecido
           </h2>
           <p className="text-md font-dmsans font-medium text-black mb-8">
             O piso aquecido é instalado sob o revestimento escolhido,{" "}

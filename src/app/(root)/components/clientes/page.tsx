@@ -11,7 +11,7 @@ const ClientesSection: React.FC = () => {
       <div className="container mx-auto">
         <div className="text-left mb-8">
           <h2 className="text-4xl md:text-6xl font-baijam font-bold mb-4">
-            Quem Confia na Legasse?<br/><span className="text-yellow-500">Nossos Clientes:</span>
+            Quem confia na Legasse?<br/><span className="text-yellow-500">Nossos clientes:</span>
           </h2>
         </div>
 

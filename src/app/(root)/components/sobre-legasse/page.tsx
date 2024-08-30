@@ -14,14 +14,14 @@ const AboutSection: React.FC = () => {
         
         <div className="w-full flex flex-col items-start">
           <span className="text-black font-dmsans font-bold text-lg ">
-           Excelência em <span className="text-yellow-700 font-black inline-flex items-center gap-1">Cada Conexão <PiAtomFill/></span>
+           Excelência em <span className="text-yellow-700 font-black inline-flex items-center gap-1">cada conexão <PiAtomFill/></span>
           </span>
           <h2 className="text-4xl md:text-5xl font-baijam font-bold mb-4">
-            Inovação em Soluções de<br/> Energia{" "}
+            Inovação em soluções de<br/> energia{" "}
             <span className="text-yellow-500 inline-flex items-center gap-2">
               &
             </span>{" "}
-            Tecnologia.
+            tecnologia.
           </h2>
           <p className="text-lg max-w-2xl font-dmsans font-medium mb-10 text-left">
             Garantimos qualidade e profissionalismo em cada projeto, superando

@@ -40,7 +40,7 @@ const Elegancia: React.FC = () => {
         {/* Título */}
         <div className="md:w-1/2">
           <h2 className="text-4xl md:text-5xl font-bold font-baijam text-black mb-8">
-             <span className="text-[#F9BC0B]">Elegância</span> com Conveniência
+             <span className="text-[#F9BC0B]">Elegância</span> com conveniência
         
           </h2>
           <p className="text-lg font-medium font-baijam text-black mb-16">Cortinas são sinônimo de elegância, adicionando um toque refinado ao ambiente. Além de controlar a luz, elas complementam a decoração, trazendo charme e sofisticação para qualquer espaço.</p>

@@ -3,9 +3,12 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
+import Head from "next/head";
+
+import "swiper/css";
+import "swiper/css/navigation";
 
 const inter = Inter({ subsets: ["latin"] });
-
 
 export const metadata: Metadata = {
   title: "Legasse - Home e Energia",
@@ -38,16 +41,13 @@ export const metadata: Metadata = {
     siteName: "Spacefy",
     url: "https://legasse.com",
     locale: "pt_BR",
-    // images: ["https://i.imgur.com/AFFPb4v.png"]
   },
   twitter: {
     title: "Legasse - Home e Energia",
     description: "Legasse é sua parceira em soluções inteligentes e integradas para casa e energia, unindo tecnologia e sustentabilidade.",
     card: "summary_large_image",
-    // images: ["https://i.imgur.com/AFFPb4v.png"],
   },
 };
-
 
 export default function RootLayout({
   children,
@@ -55,15 +55,19 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    
     <html lang="pt-br">
-      
+      <Head>
+        <link
+          rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+        />
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+      </Head>
       <body className={inter.className}>
-      <Navbar/>
+        <Navbar />
         {children}
-        
-        <Footer/>
-        </body>
+        <Footer />
+      </body>
     </html>
   );
 }

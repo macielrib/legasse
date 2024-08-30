@@ -40,7 +40,7 @@ const Experiencia: React.FC = () => {
         {/* Título */}
         <div className="md:w-1/2">
           <h2 className="text-4xl md:text-5xl font-bold font-baijam text-black mb-8">
-            Experiência Audiovisual <span className="text-[#F9BC0B]">Imersiva.</span> 
+            Experiência audiovisual <span className="text-[#F9BC0B]">imersiva.</span> 
         
           </h2>
 

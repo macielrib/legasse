@@ -21,7 +21,7 @@ const Compatibilizacao: React.FC = () => {
         {/* Texto e Tópicos */}
         <div className="md:w-1/2">
           <h2 className="text-4xl md:text-5xl font-bold font-baijam text-black mb-6">
-            <span className="text-yellow-500">Compatibilização</span> de Projeto
+            <span className="text-yellow-500">Compatibilização</span> de projeto
           </h2>
           <p className="text-lg font-dmsans font-medium text-black mb-6">
             A compatibilização integra disciplinas no gerenciamento de projetos de construção, resolvendo conflitos e inconsistências em modelos BIM antes da execução. Isso reduz retrabalho, melhora a coordenação e garante uma construção mais eficiente e de alta qualidade.

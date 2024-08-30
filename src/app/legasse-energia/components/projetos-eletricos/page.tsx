@@ -49,7 +49,7 @@ const ProjetosEletricos: React.FC = () => {
           {/* Texto e Tópicos à Esquerda */}
           <div className="md:w-1/2">
             <h2 className="text-4xl md:text-5xl font-bold font-baijam text-black mb-16">
-              Projetos Elétricos
+              Projetos elétricos
             </h2>
 
             <ul className="space-y-6">
@@ -87,7 +87,7 @@ const ProjetosEletricos: React.FC = () => {
           {/* Texto e Tópicos à Direita */}
           <div className="md:w-7/12">
             <h2 className="text-4xl md:text-5xl font-bold font-baijam text-black mb-6">
-              Telecomunicação e <span className="text-[#F9BC0B]">Automação</span>
+              Telecomunicação e <span className="text-[#F9BC0B]">automação</span>
             </h2>
 
             <ul className="space-y-6">

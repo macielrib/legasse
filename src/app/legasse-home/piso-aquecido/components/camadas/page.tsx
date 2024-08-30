@@ -29,7 +29,7 @@ const Camadas: React.FC = () => {
         {/* Tópicos à Direita */}
         <div className="md:w-6/12">
           <h2 className="text-4xl md:text-5xl font-bold font-baijam text-black mb-6">
-            Camadas do Piso Aquecido
+            Camadas do piso aquecido
           </h2>
 
           <ul className="space-y-6">

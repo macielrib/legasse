@@ -34,7 +34,7 @@ const TiposDeTecidoSection: React.FC = () => {
         {/* Título e Descrição */}
         <div className="mb-12">
           <h2 className="text-4xl md:text-5xl font-bold font-baijam text-black mb-4">
-            Tipos de Tecidos
+            Tipos de tecidos
           </h2>
           <p className="text-md font-dmsans text-black">
             Oferecemos tecidos leves que filtram a luz suavemente e opções mais

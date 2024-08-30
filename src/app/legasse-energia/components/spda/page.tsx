@@ -34,7 +34,7 @@ const Spda: React.FC = () => {
             {/* Texto e Descrição à Esquerda */}
             <div className="md:w-1/2">
               <h2 className="text-4xl md:text-5xl font-bold font-baijam text-black mb-10">
-                Serviços de Projeto de{" "}
+                Serviços de projeto de{" "}
                 <span className="text-yellow-500">SPDA</span>
               </h2>
               <p className="text-md font-dmsans font-medium text-black mb-8">
@@ -65,7 +65,7 @@ const Spda: React.FC = () => {
        
           <div className="container mx-auto px-6 md:px-12">
             <h3 className="text-4xl md:text-5xl font-bold font-baijam text-black mb-12">
-              Laudos Técnicos
+              Laudos técnicos
             </h3>
 
             <div className="flex flex-wrap gap-8">
@@ -94,7 +94,7 @@ const Spda: React.FC = () => {
           {/* Texto à Direita */}
           <div className="md:w-1/2">
             <h2 className="text-4xl md:text-5xl font-bold font-baijam text-black mb-8">
-              Laudo de Conformidade
+              Laudo de conformidade
             </h2>
             <p className="text-md font-dmsans font-medium text-black mb-8">
               Verificamos se reformas ou novas construções seguem as normas do

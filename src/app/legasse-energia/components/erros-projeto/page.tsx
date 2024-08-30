@@ -38,8 +38,8 @@ const ErrosDoProjeto: React.FC = () => {
         {/* Título */}
         <div className="md:w-1/2">
           <h2 className="text-4xl md:text-5xl font-bold font-baijam text-white mb-8">
-            <span className="text-[#F9BC0B]">Erros</span> de Projetos{" "}
-            <span className="text-[#F9BC0B]">Custam Mais</span> do Que Você Imagina
+            <span className="text-[#F9BC0B]">Erros</span> de projetos{" "}
+            <span className="text-[#F9BC0B]">custam mais</span> do que você imagina
           </h2>
 
           {/* Cards de Erros */}
