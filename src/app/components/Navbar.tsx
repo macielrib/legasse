@@ -15,10 +15,11 @@ const Navbar: React.FC = () => {
   const isBlogPage = pathname.startsWith("/blog");
 
   const navItems = [
+    { name: "Início", path: "/" },
     { name: "Sobre a Legasse", path: "#sobre-legasse" },
     {
       name: "Nossos Serviços",
-      path: "#nossos-servicos",
+      path: "/",
       dropdown: [
         {
           title: "Soluções Home",
