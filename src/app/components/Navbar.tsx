@@ -19,7 +19,7 @@ const Navbar: React.FC = () => {
     { name: "Sobre a Legasse", path: "#sobre-legasse" },
     {
       name: "Nossos Serviços",
-      path: "/",
+      path: "#nossos-serviços",
       dropdown: [
         {
           title: "Soluções Home",
