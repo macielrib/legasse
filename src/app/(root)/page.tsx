@@ -26,7 +26,7 @@ const Hero: React.FC = () => {
   
       <span className="font-baijam text-yellow-500 text-lg font-semibold">+2.127 Clientes Satisfeitos!</span>
    
-        <h1 className="text-5xl md:text-7xl font-semibold font-baijam mb-4">
+        <h1 className="text-5xl md:text-8xl font-semibold font-baijam mb-4">
           Legasse
           <br />
           <span className="text-yellow-500">
@@ -34,13 +34,14 @@ const Hero: React.FC = () => {
           </span>
         </h1>
         <p className="text-xl max-w-xl font-dmsans font-normal text-neutral-300 mb-14">
-          Legasse é sua parceira em soluções inteligentes e integradas para casa
+          Sua parceira em soluções inteligentes e integradas para casa
           e energia, unindo tecnologia e sustentabilidade.
         </p>
         <div className="flex flex-wrap gap-2 justify-start">
-          <Link href="/conhecer" legacyBehavior>
+          <Link href="#sobre-legasse" legacyBehavior>
             <a
-              href=""
+              href="#sobre-legasse"
+              target="_blank"
               className="bg-yellow-500 text-lg font-semibold py-4 px-4  font-dmsans text-black rounded-lg items-center inline-flex group gap-1.5 transition duration-300 hover:-translate-y-1 hover:bg-yellow-400"
             >
               Conheça a Legasse{" "}
@@ -49,7 +50,8 @@ const Hero: React.FC = () => {
           </Link>
           <Link href="/contato" legacyBehavior>
             <a
-              href=""
+                 href="https://api.whatsapp.com/send/?phone=5548999999999&text&type=phone_number&app_absent=0"
+              target="_blank"
               className="bg-white text-lg font-dmsans font-semibold py-4 px-4 text-black rounded-lg items-center inline-flex group gap-1.5 transition duration-300 hover:-translate-y-1"
             >
               Entrar em Contato{" "}

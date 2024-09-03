@@ -46,14 +46,14 @@ const SolucoesHome: React.FC = () => {
   ];
 
   return (
-    <section className="py-12 lg:px-8 bg-[#f6f4ef] border-b-2 border border-b-yellow-500 border-t-neutral-200">
+    <section className="py-12 lg:px-8 bg-[#f6f4ef] border-b-2 border border-b-yellow-500 border-t-neutral-200" id="solucoes-home">
       <Reveal>
-        <div className="container mx-auto px-4 lg:mt-16">
+        <div className="container mx-auto px-6 lg:mt-16">
           <div className="text-left md:text-left mb-8">
-            <h2 className="text-4xl md:text-6xl font-bold mb-4 font-baijam">
+            <h2 className="text-4xl md:text-7xl font-bold mb-4 font-baijam">
               Soluções <span className="text-[#F9BC0B] inline-flex items-center gap-2">Home</span>
             </h2>
-            <p className="text-md font-dmsans font-medium text-black mb-8">
+            <p className="text-md md:text-xl font-dmsans font-medium text-black mb-8">
               Transforme sua casa em um <strong>ambiente confortável</strong>, seguro e <br/>tecnologicamente avançado com a Legasse.
             </p>
           </div>

@@ -33,13 +33,13 @@ const BlogSection: React.FC = () => {
 
   return (
     <section className="py-24 bg-white">
-      <div className="container mx-auto lg:px-12">
+      <div className="container mx-auto px-6 md:px-14">
         {/* Título e Descrição */}
         <div className="text-left md:text-left mb-8">
-          <h2 className="text-4xl md:text-6xl font-bold mb-4 font-baijam">
+          <h2 className="text-4xl md:text-7xl font-bold mb-4 font-baijam">
             <span className="text-black">Blog</span> e Artigos
           </h2>
-          <p className="text-md font-dmsans font-medium text-black">
+          <p className="text-md md:text-xl font-dmsans font-medium text-black">
             Explore as últimas inovações e dicas sobre energia solar e automação para sua empresa e lar.
           </p>
         </div>

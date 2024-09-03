@@ -11,7 +11,7 @@ const LocationSection: React.FC = () => {
       <Reveal>
         <div className="container mx-auto text-center md:text-center">
           <div className="mb-12">
-            <h2 className="text-4xl md:text-6xl font-baijam font-bold mb-4">
+            <h2 className="text-4xl md:text-7xl font-baijam font-bold mb-4">
               <span className="text-yellow-500">Visite-nos</span> ou converse
               conosco!
             </h2>

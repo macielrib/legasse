@@ -16,10 +16,10 @@ const Navbar: React.FC = () => {
 
   const navItems = [
     { name: "Início", path: "/" },
-    { name: "Sobre a Legasse", path: "#sobre-legasse" },
+    { name: "Sobre a Legasse", path: "/#sobre-legasse" },
     {
       name: "Nossos Serviços",
-      path: "#nossos-serviços",
+      path: "/#solucoes-home",
       dropdown: [
         {
           title: "Soluções Home",
@@ -33,7 +33,7 @@ const Navbar: React.FC = () => {
             { name: "Lareiras", path: "/legasse-home/lareiras" },
             {
               name: "Cortinas e Persianas",
-              path: "/legasse-home/cortinas-persianas",
+              path: "/legasse-home/cortina",
             },
             { name: "Automação", path: "/legasse-home/automacao" },
           ],
@@ -41,27 +41,27 @@ const Navbar: React.FC = () => {
         {
           title: "Soluções Energia",
           items: [
-            { name: "Energia Solar", path: "/legasse-energia/energia-solar" },
+            { name: "Energia Solar", path: "/energia-solar" },
             {
               name: "Projeto Elétrico",
-              path: "/legasse-energia/projeto-eletrico",
+              path: "/legasse-energia/#projeto-eletrico",
             },
             {
               name: "Telecomunicação e Automação",
-              path: "/legasse-energia/telecomunicacao-automacao",
+              path: "/legasse-energia#telecomunicacao",
             },
             {
               name: "Projetos de SPDA",
-              path: "/legasse-energia/projetos-spda",
+              path: "/legasse-energia/#spda",
             },
-            { name: "Laudos", path: "/legasse-energia/laudos" },
-            { name: "Modelagem BIM", path: "/legasse-energia/modelagem-bim" },
+            { name: "Laudos", path: "/legasse-energia#laudos" },
+            { name: "Modelagem BIM", path: "/legasse-energia#modelagem-bim" },
           ],
         },
       ],
     },
     { name: "Blog", path: "/blog" },
-    { name: "Contate-nos", path: "#contate-nos" },
+    { name: "Contate-nos", path: "/#contate-nos" },
   ];
 
   useEffect(() => {
@@ -99,7 +99,7 @@ const Navbar: React.FC = () => {
     >
       <div className="container mx-auto px-6 py-2 flex flex-wrap justify-between gap-2 items-center">
         <div className="flex items-center gap-1.5 mb-2 md:mb-0 px-2 py-1">
-          <Link href={"/"} className="inline-flex">
+          <Link href="/" className="inline-flex">
             <Image
               src="/logo.png"
               alt="Logo"
@@ -119,8 +119,8 @@ const Navbar: React.FC = () => {
         <div className="hidden md:flex items-center space-x-4">
           {navItems.map((item, index) => (
             <div key={index} className="relative flex items-center">
-              <button
-                onClick={() => item.dropdown && toggleDropdown()}
+              <Link
+                href={item.path}
                 className={`text-md md:text-xl font-normal font-dmsans leading-relaxed transition duration-300 relative group ${
                   pathname === item.path
                     ? "text-yellow-500"
@@ -130,12 +130,14 @@ const Navbar: React.FC = () => {
                 } hover:text-yellow-500 hover:scale-105`}
               >
                 {item.name}
-                {item.dropdown && (
-                  <span className="absolute top-[-1.5rem] left-1/2 transform -translate-x-1/2 bg-black text-white text-xs font-medium px-2 py-1 rounded-md whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                    Clique para ver mais
-                  </span>
-                )}
-              </button>
+              </Link>
+
+              {item.dropdown && (
+                <button
+                  onClick={toggleDropdown}
+                  className="absolute inset-0 w-full h-full cursor-pointer"
+                />
+              )}
 
               {index < navItems.length - 1 && (
                 <span className="mx-2 text-yellow-500">|</span>
@@ -154,13 +156,8 @@ const Navbar: React.FC = () => {
                       <ul className="space-y-2">
                         {col.items.map((subItem, subIndex) => (
                           <li key={subIndex}>
-                            <Link href={subItem.path} legacyBehavior>
-                              <a
-                                className="text-black font-dmsans font-medium hover:text-yellow-500 cursor-pointer transition"
-                                onClick={() => setShowDropdown(false)}
-                              >
-                                {subItem.name}
-                              </a>
+                            <Link href={subItem.path}>
+                              {subItem.name}
                             </Link>
                           </li>
                         ))}
@@ -203,15 +200,15 @@ const Navbar: React.FC = () => {
         </div>
         <div className="flex flex-col items-center mt-8 space-y-4">
           {navItems.map((item, index) => (
-            <Link key={index} href={item.path} legacyBehavior>
-              <a
+            <Link key={index} href={item.path}>
+              <div
                 onClick={() => setMenuOpen(false)}
                 className={`block px-6 py-2 text-lg transition-all duration-300 ease-in-out ${
                   pathname === item.path ? "text-yellow-500" : "text-white"
                 }`}
               >
                 {item.name}
-              </a>
+              </div>
             </Link>
           ))}
         </div>

@@ -20,8 +20,8 @@ const SolucoesEnergia: React.FC = () => {
       link: '/legasse-energia#projetos-eletricos'
     },
     {
-      nome: 'Telecomunicação e Automação',
-      imagem: '/assets/legasse-energia/teleautomacao-thumb.png',
+      nome: 'Projetos de Telecomunicação e Automação',
+      imagem: '/assets/legasse-energia/projetos-telecomunicacao.png',
       descricao: 'Soluções em telecomunicações e automação residencial.',
       link: '/legasse-energia#telecomunicacao'
     },
@@ -46,14 +46,14 @@ const SolucoesEnergia: React.FC = () => {
   ];
 
   return (
-    <section className="py-12 lg:px-8 bg-black">
+    <section className="py-12 lg:px-8 bg-black" id="solucoes-energia">
       <Reveal>
-        <div className="container mx-auto px-4 lg:mt-16">
+        <div className="container mx-auto px-6 lg:mt-16">
           <div className="text-left md:text-left mb-8">
-          <h2 className="text-4xl md:text-6xl text-white font-bold mb-4 font-baijam">
+          <h2 className="text-4xl md:text-7xl text-white font-bold mb-4 font-baijam">
               Soluções <span className="text-[#F9BC0B] inline-flex items-center gap-2">Energia</span>
             </h2>
-            <p className="text-md font-dmsans font-medium text-[#ccc] mb-8">
+            <p className="text-md md:text-xl font-dmsans font-medium text-[#ccc] mb-8">
               Energia solar fotovoltaica residencial, industrial, usinas de solo e usinas<br/> de investimento. Conte com a gente!
             </p>
           </div>
@@ -61,13 +61,13 @@ const SolucoesEnergia: React.FC = () => {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12">
             {cards.map((card, index) => (
               <Link key={index} href={card.link} passHref legacyBehavior>
-                <a className="relative overflow-hidden rounded-lg shadow-lg transition-transform transform hover:scale-105 group">
+                <a className="relative overflow-hidden rounded-lg  shadow-lg transition-transform transform hover:scale-105 group">
                   <Image
                     src={card.imagem}
                     alt={card.nome}
                     width={400}
                     height={300}
-                    className="w-[28rem] h-96 object-cover"
+                    className="w-[28rem] h-96 object-cover bg-black opacity-60"
                   />
                   <div className="absolute bottom-4 left-4 flex items-center space-x-2">
                     <h3 className="text-white text-lg md:text-xl font-medium font-dmsans">{card.nome}</h3>

@@ -17,7 +17,7 @@ const AspiracaoCentral = () => {
      <Reveal>
      <div className="container mx-auto px-6 md:px-12 text-center md:text-left mt-16">
           {/* Título */}
-          <h1 className="text-4xl md:text-6xl font-baijam font-bold text-white mb-4">
+          <h1 className="text-4xl md:text-7xl font-baijam font-bold text-white mb-4">
             Aspiração Central:<br/> <span className="text-[#F9BC0B]">Praticidade</span> e Higiene Total
           </h1>
 

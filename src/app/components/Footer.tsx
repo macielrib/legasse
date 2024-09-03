@@ -82,7 +82,7 @@ const Footer: React.FC = () => {
               </Link>
             </li>
             <li>
-              <Link href="/sobre" passHref legacyBehavior>
+              <Link href="/#sobre-legasse" passHref legacyBehavior>
                 <a className="text-xl font-baijam font-medium hover:text-yellow-500 transition-colors">
                   {" "}
                   Sobre a Legasse
@@ -90,23 +90,23 @@ const Footer: React.FC = () => {
               </Link>
             </li>
             <li>
-              <Link href="/solucoes-home" passHref legacyBehavior>
+              <Link href="/#solucoes-home" passHref legacyBehavior>
                 <a className="text-xl font-baijam font-medium hover:text-yellow-500 transition-colors">
                   Soluções Home
                 </a>
               </Link>
             </li>
             <li>
-              <Link href="/solucoes-energia" passHref legacyBehavior>
+              <Link href="/#solucoes-energia" passHref legacyBehavior>
                 <a className="text-xl font-baijam font-medium hover:text-yellow-500 transition-colors">
                   Soluções Energia
                 </a>
               </Link>
             </li>
             <li>
-              <Link href="/instagram" passHref legacyBehavior>
+              <Link href="https://instagram.com/legasse" target="_blank" passHref legacyBehavior>
                 <a className="text-xl font-baijam font-medium hover:text-yellow-500 transition-colors">
-                  Instagram Blog
+                  Instagram
                 </a>
               </Link>
             </li>
@@ -115,42 +115,42 @@ const Footer: React.FC = () => {
           {/* Segunda Coluna de Links */}
           <ul className="space-y-4">
             <li>
-              <Link href="/energia-solar" passHref legacyBehavior>
+              <Link href="/energia-solar" target="_blank" passHref legacyBehavior>
                 <a className="text-xl font-baijam font-medium hover:text-yellow-500 transition-colors">
                   Energia Solar
                 </a>
               </Link>
             </li>
             <li>
-              <Link href="/projetos-eletricos" passHref legacyBehavior>
+              <Link href="/legasse-energia/#projetos-eletricos" passHref legacyBehavior>
                 <a className="text-xl font-baijam font-medium hover:text-yellow-500 transition-colors">
                   Projetos Elétricos
                 </a>
               </Link>
             </li>
             <li>
-              <Link href="/telecomunicacao" passHref legacyBehavior>
+              <Link href="/legasse-energia#telecomunicacao" passHref legacyBehavior>
                 <a className="text-xl font-baijam font-medium hover:text-yellow-500 transition-colors">
                   Telecomunicação
                 </a>
               </Link>
             </li>
             <li>
-              <Link href="/projetos-spda" passHref legacyBehavior>
+              <Link href="/legasse-energia#spda" passHref legacyBehavior>
                 <a className="text-xl font-baijam font-medium hover:text-yellow-500 transition-colors">
                   Projetos de SPDA
                 </a>
               </Link>
             </li>
             <li>
-              <Link href="/laudos" passHref legacyBehavior>
+              <Link href="/legasse-energia#laudos" passHref legacyBehavior>
                 <a className="text-xl font-baijam font-medium hover:text-yellow-500 transition-colors">
                   Laudos
                 </a>
               </Link>
             </li>
             <li>
-              <Link href="/modelagem-bim" passHref legacyBehavior>
+              <Link href="/legasse-energia#modelagem-bim" passHref legacyBehavior>
                 <a className="text-xl font-baijam font-medium hover:text-yellow-500 transition-colors">
                   Modelagem BIM
                 </a>
@@ -161,42 +161,42 @@ const Footer: React.FC = () => {
           {/* Terceira Coluna de Links */}
           <ul className="space-y-4">
             <li>
-              <Link href="/cinema-em-casa" passHref legacyBehavior>
+              <Link href="/legasse-home/audio-video" passHref legacyBehavior>
                 <a className="text-xl font-baijam font-medium hover:text-yellow-500 transition-colors">
-                  Cinema em Casa
+                 Áudio e Vídeo
                 </a>
               </Link>
             </li>
             <li>
-              <Link href="/piso-aquecido" passHref legacyBehavior>
+              <Link href="/legasse-home/piso-aquecido" passHref legacyBehavior>
                 <a className="text-xl font-baijam font-medium hover:text-yellow-500 transition-colors">
                   Piso Aquecido
                 </a>
               </Link>
             </li>
             <li>
-              <Link href="/aspiracao-central" passHref legacyBehavior>
+              <Link href="/legasse-home/aspiracao-central" passHref legacyBehavior>
                 <a className="text-xl font-baijam font-medium hover:text-yellow-500 transition-colors">
                   Aspiração Central
                 </a>
               </Link>
             </li>
             <li>
-              <Link href="/lareiras" passHref legacyBehavior>
+              <Link href="/legasse-home/lareiras" passHref legacyBehavior>
                 <a className="text-xl font-baijam font-medium hover:text-yellow-500 transition-colors">
                   Lareiras
                 </a>
               </Link>
             </li>
             <li>
-              <Link href="/cortinas-pesianas" passHref legacyBehavior>
+              <Link href="/legasse-home/cortina" passHref legacyBehavior>
                 <a className="text-xl font-baijam font-medium hover:text-yellow-500 transition-colors">
                   Cortinas/Persianas
                 </a>
               </Link>
             </li>
             <li>
-              <Link href="/automacao" passHref legacyBehavior>
+              <Link href="/legasse-home/automacao" passHref legacyBehavior>
                 <a className="text-xl font-baijam font-medium hover:text-yellow-500 transition-colors">
                   Automação
                 </a>
@@ -210,7 +210,7 @@ const Footer: React.FC = () => {
       <div className="mt-12 text-center">
         <p className="text-md font-dmsans text-white">
           Site desenvolvido por{" "}
-          <Link href="https://spacefy.com.br" passHref legacyBehavior>
+          <Link href="https://spacefy.com.br" target="_blank" passHref legacyBehavior>
             <a className="text-yellow-500 font-bold" target="_blank">
               Spacefy
             </a>

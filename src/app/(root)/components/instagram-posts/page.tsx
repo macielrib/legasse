@@ -7,14 +7,14 @@ import { FaInstagram } from "react-icons/fa";
 const InstagramSection: React.FC = () => {
   return (
 
-<section className="bg-white py-16 px-6 md:px-12">
+<section className="bg-white py-16 px-6 md:px-14">
 <Reveal>
-      <div className="container mx-auto">
+      <div className="container mx-auto ">
         <div className="text-left mb-12">
-          <h2 className="text-4xl md:text-6xl font-baijam font-bold mb-4">
+          <h2 className="text-4xl md:text-7xl font-baijam font-bold mb-4">
             Conecte-se conosco:<br/><span className="text-yellow-500">Siga-nos</span> no instagram!
           </h2>
-          <p className="text-lg font-dmsans font-medium text-black max-w-2xl">
+          <p className="text-md md:text-xl font-dmsans font-medium text-black max-w-2xl">
             Confira as últimas novidades e acompanhe nossos projetos<br/> nas nossas <b>contas no Instagram.</b>
           </p>
         </div>

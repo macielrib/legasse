@@ -6,11 +6,11 @@ import Image from "next/image";
 const ClientesSection: React.FC = () => {
   return (
 
-<section className="bg-[#f6f4ef] border border-t-neutral-200 py-16 px-6 md:px-12">
+<section className="bg-[#f6f4ef] border border-t-neutral-200 py-16 px-6 md:px-14">
 <Reveal>
       <div className="container mx-auto">
         <div className="text-left mb-8">
-          <h2 className="text-4xl md:text-6xl font-baijam font-bold mb-4">
+          <h2 className="text-4xl md:text-7xl font-baijam font-bold mb-4">
             Quem confia na Legasse?<br/><span className="text-yellow-500">Nossos clientes:</span>
           </h2>
         </div>
