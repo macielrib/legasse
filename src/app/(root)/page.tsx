@@ -41,7 +41,7 @@ const Hero: React.FC = () => {
           <Link href="#sobre-legasse" legacyBehavior>
             <a
               href="#sobre-legasse"
-              target="_blank"
+          
               className="bg-yellow-500 text-lg font-semibold py-4 px-4  font-dmsans text-black rounded-lg items-center inline-flex group gap-1.5 transition duration-300 hover:-translate-y-1 hover:bg-yellow-400"
             >
               Conheça a Legasse{" "}
