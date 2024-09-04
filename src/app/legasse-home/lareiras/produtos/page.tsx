@@ -31,7 +31,7 @@ const LareirasSection: React.FC = () => {
    <div className="container mx-auto px-6 md:px-12">
         {/* Título e Descrição */}
         <div className="text-left mb-12">
-          <h2 className="text-4xl md:text-6xl font-bold font-baijam text-black mb-4">
+          <h2 className="text-4xl md:text-7xl font-bold font-baijam text-black mb-4">
             Nossas lareiras para <span className="text-yellow-500">esquentar</span> sua casa
           </h2>
           <p className="text-md font-dmsans text-black">

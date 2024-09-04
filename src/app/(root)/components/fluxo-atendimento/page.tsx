@@ -9,7 +9,7 @@ const FluxoAtendimento: React.FC = () => {
       <Reveal>
         <div className="container mx-auto text-left px-6">
           <div className="text-left mx-auto md:px-8 mb-12">
-            <h2 className="text-4xl md:text-6xl font-baijam font-bold mb-4">
+            <h2 className="text-4xl md:text-7xl font-baijam font-bold mb-4">
               Como funciona?
               <br />
               <span className="text-yellow-500">Fluxo de atendimento</span>

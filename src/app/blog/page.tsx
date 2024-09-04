@@ -47,7 +47,7 @@ const BlogPage: React.FC = () => {
         <div className="container mx-auto px-4 lg:mt-16">
           {/* Título do Blog */}
           <div className="text-left md:text-left mb-8">
-            <h2 className="text-4xl md:text-6xl font-bold mb-4 font-baijam">
+            <h2 className="text-4xl md:text-7xl font-bold mb-4 font-baijam">
               <span className="text-yellow-500">Inove</span> sua empresa e seu lar <br /> com energia solar e automação.
             </h2>
           </div>

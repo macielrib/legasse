@@ -20,7 +20,7 @@ const Beneficios: React.FC = () => {
     <div className="container mx-auto px-6 md:px-12 flex flex-col md:flex-row items-start gap-12">
         {/* Texto e Tópicos */}
         <div className="md:w-7/12">
-          <h2 className="text-4xl md:text-6xl font-bold font-baijam text-black mb-6">
+          <h2 className="text-4xl md:text-7xl font-bold font-baijam text-black mb-6">
            Benefícios da aspiração central
           </h2>
    

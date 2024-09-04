@@ -10,7 +10,7 @@ const Fabricante: React.FC = () => {
  <div className="container mx-auto px-6 md:px-12 flex flex-col md:flex-row items-start gap-12">
         {/* Texto à Esquerda */}
         <div className="md:w-1/2">
-          <h2 className="text-4xl md:text-6xl font-bold font-baijam text-black mb-6">
+          <h2 className="text-4xl md:text-7xl font-bold font-baijam text-black mb-6">
             A <span className="text-yellow-500">maior</span> fabricante de sistemas de aquecimento <span className="text-yellow-500">do mundo.</span>
           </h2>
           <p className="text-md font-dmsans font-medium text-black">

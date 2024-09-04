@@ -20,7 +20,7 @@ const Compatibilizacao: React.FC = () => {
   <div className="container mx-auto px-6 md:px-12 flex flex-col md:flex-row items-start gap-12">
         {/* Texto e Tópicos */}
         <div className="md:w-1/2">
-          <h2 className="text-4xl md:text-6xl font-bold font-baijam text-black mb-6">
+          <h2 className="text-4xl md:text-7xl font-bold font-baijam text-black mb-6">
             <span className="text-yellow-500">Compatibilização</span> de projeto
           </h2>
           <p className="text-lg font-dmsans font-medium text-black mb-6">

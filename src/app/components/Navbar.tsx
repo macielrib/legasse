@@ -60,7 +60,7 @@ const Navbar: React.FC = () => {
         },
       ],
     },
-    { name: "Blog", path: "/blog" },
+    { name: "Blog", path: "/coming" },
     { name: "Contate-nos", path: "/#contate-nos" },
   ];
 

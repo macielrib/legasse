@@ -11,7 +11,7 @@ const InstagramSection: React.FC = () => {
 <Reveal>
       <div className="container mx-auto ">
         <div className="text-left mb-12">
-          <h2 className="text-4xl md:text-6xl font-baijam font-bold mb-4">
+          <h2 className="text-4xl md:text-7xl font-baijam font-bold mb-4">
             Conecte-se conosco:<br/><span className="text-yellow-500">Siga-nos</span> no instagram!
           </h2>
           <p className="text-md md:text-xl font-dmsans font-medium text-black max-w-2xl">

@@ -36,7 +36,7 @@ const BlogSection: React.FC = () => {
       <div className="container mx-auto px-6 md:px-14">
         {/* Título e Descrição */}
         <div className="text-left md:text-left mb-8">
-          <h2 className="text-4xl md:text-6xl font-bold mb-4 font-baijam">
+          <h2 className="text-4xl md:text-7xl font-bold mb-4 font-baijam">
             <span className="text-black">Blog</span> e Artigos
           </h2>
           <p className="text-md md:text-xl font-dmsans font-medium text-black">
