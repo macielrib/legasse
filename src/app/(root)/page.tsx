@@ -24,7 +24,6 @@ const Hero: React.FC = () => {
       <div className="container mx-auto px-6 lg:px-12 lg:mt-36">
      
   
-      <span className="font-baijam text-yellow-500 text-lg font-semibold">+2.127 Clientes Satisfeitos!</span>
    
         <h1 className="text-5xl md:text-8xl font-semibold font-baijam mb-4">
           Legasse

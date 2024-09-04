@@ -39,7 +39,7 @@ const Elegancia: React.FC = () => {
  <div className="container mx-auto px-6 md:px-12 flex flex-col md:flex-row items-end gap-12">
         {/* Título */}
         <div className="md:w-1/2">
-          <h2 className="text-4xl md:text-5xl font-bold font-baijam text-black mb-8">
+          <h2 className="text-4xl md:text-6xl font-bold font-baijam text-black mb-8">
              <span className="text-[#F9BC0B]">Elegância</span> com conveniência
         
           </h2>
@@ -62,12 +62,7 @@ const Elegancia: React.FC = () => {
                 
               </div>
             ))}
-                <Link href="https://wa.me/5548999999999" passHref legacyBehavior>
-              <a className="inline-flex items-center gap-2 text-xl font-normal bg-black py-3 px-6 rounded-md text-white font-dmsans transition-transform transform hover:scale-105">
-                Abrir Cortinas {" "}
-                <FaWhatsapp className="text-yellow-500 space-x-2" />
-              </a>
-            </Link>
+             
           </div>
       
         </div>

@@ -12,7 +12,7 @@ const SobreCortina: React.FC = () => {
     <Reveal>
     <div className="container mx-auto px-6 md:px-12 flex flex-col md:flex-row-reverse items-center ">
           <div className="md:w-7/12">
-            <h2 className="text-4xl md:text-5xl font-bold font-baijam text-black mb-6">
+            <h2 className="text-4xl md:text-6xl font-bold font-baijam text-black mb-6">
               Cortina motorizada
             </h2>
 
@@ -24,12 +24,7 @@ const SobreCortina: React.FC = () => {
                 artificial e podem ser programadas para abrir e fechar conforme
                 a sua rotina.
               </p>
-              <Link href="https://wa.me/5548999999999" passHref legacyBehavior>
-              <a className="inline-flex items-center gap-2 text-xl mt-4 font-normal bg-black py-3 px-6 rounded-md text-white font-dmsans transition-transform transform hover:scale-105">
-                Mandar uma Mensagem{" "}
-                <FaWhatsapp className="text-yellow-500 space-x-2" />
-              </a>
-            </Link>
+             
           </div>
 
           {/* Imagem à Esquerda */}

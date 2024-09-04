@@ -20,7 +20,7 @@ const Conforto: React.FC = () => {
    <div className="container mx-auto px-6 md:px-12 flex flex-col md:flex-row items-start gap-12">
         {/* Texto e Tópicos */}
         <div className="md:w-7/12">
-          <h2 className="text-4xl md:text-5xl font-bold font-baijam text-white mb-6">
+          <h2 className="text-4xl md:text-6xl font-bold font-baijam text-white mb-6">
            Conforto, <span className="text-yellow-500">economia</span> e controle total.
           </h2>
           <p className="text-md md:text-lg text-[#ccc] font-dmsans font-normal max-w-2xl mb-12">A automação residencial transforma sua casa em um ambiente inteligente, integrando tecnologia para um estilo de vida mais conveniente e eficiente.</p>

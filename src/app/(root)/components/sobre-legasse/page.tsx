@@ -14,7 +14,7 @@ const AboutSection: React.FC = () => {
         
         <div className="w-full flex flex-col items-start">
      
-          <h2 className="text-4xl md:text-7xl font-baijam font-bold mb-4">
+          <h2 className="text-4xl md:text-6xl font-baijam font-bold mb-4">
           Sobre a <span className="text-yellow-500">Legasse</span>
           </h2>
           <p className="text-xl max-w-2xl font-dmsans font-medium mb-10 text-left">

@@ -50,7 +50,7 @@ const SolucoesHome: React.FC = () => {
       <Reveal>
         <div className="container mx-auto px-6 lg:mt-16">
           <div className="text-left md:text-left mb-8">
-            <h2 className="text-4xl md:text-7xl font-bold mb-4 font-baijam">
+            <h2 className="text-4xl md:text-6xl font-bold mb-4 font-baijam">
               Soluções <span className="text-[#F9BC0B] inline-flex items-center gap-2">Home</span>
             </h2>
             <p className="text-md md:text-xl font-dmsans font-medium text-black mb-8">

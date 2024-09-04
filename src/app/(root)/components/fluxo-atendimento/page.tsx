@@ -9,7 +9,7 @@ const FluxoAtendimento: React.FC = () => {
       <Reveal>
         <div className="container mx-auto text-left px-6">
           <div className="text-left mx-auto md:px-8 mb-12">
-            <h2 className="text-4xl md:text-7xl font-baijam font-bold mb-4">
+            <h2 className="text-4xl md:text-6xl font-baijam font-bold mb-4">
               Como funciona?
               <br />
               <span className="text-yellow-500">Fluxo de atendimento</span>
@@ -98,7 +98,7 @@ const FluxoAtendimento: React.FC = () => {
               <div className="flex flex-col items-start relative mt-10">
                 <div className="flex items-center gap-5">
                   <span className="text-[#F9BC0B] font-baijam font-semibold text-2xl lg:text-3xl xl:text-4xl">
-                    5.
+                    8.
                   </span>
                   <Image
                     src={"/assets/fluxo/Arrow01.svg"}
@@ -116,7 +116,7 @@ const FluxoAtendimento: React.FC = () => {
               <div className="flex flex-col items-start mt-10">
                 <div className="flex items-center gap-5">
                   <span className="text-[#F9BC0B] font-baijam font-semibold text-2xl lg:text-3xl xl:text-4xl">
-                    6.
+                    7.
                   </span>
                   <Image
                     src={"/assets/fluxo/Arrow01.svg"}
@@ -134,7 +134,7 @@ const FluxoAtendimento: React.FC = () => {
               <div className="flex flex-col items-start mt-10">
                 <div className="flex items-center gap-5">
                   <span className="text-[#F9BC0B] font-baijam font-semibold text-2xl lg:text-3xl xl:text-4xl">
-                    7.
+                    6.
                   </span>
                   <Image
                     src={"/assets/fluxo/Arrow01.svg"}
@@ -152,7 +152,7 @@ const FluxoAtendimento: React.FC = () => {
               <div className="flex flex-col items-start relative mt-10">
                 <div className="flex items-center gap-5">
                   <span className="text-[#F9BC0B] font-baijam font-semibold text-2xl lg:text-3xl xl:text-4xl">
-                    8.
+                    5.
                   </span>
                   <Image
                     src={"/assets/fluxo/Arrow01.svg"}

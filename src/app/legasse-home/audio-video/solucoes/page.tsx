@@ -38,7 +38,7 @@ const Solucoes: React.FC = () => {
     <div className="container mx-auto px-6 md:px-12 flex flex-col md:flex-row items-end gap-12">
           {/* Texto e Tópicos à Esquerda */}
           <div className="w-full">
-            <h2 className="text-4xl md:text-5xl font-bold font-baijam text-black mb-4">
+            <h2 className="text-4xl md:text-6xl font-bold font-baijam text-black mb-4">
               Soluções de áudio e vídeo{" "}
               <span className="text-yellow-500">personalizadas.</span>
             </h2>
@@ -54,7 +54,7 @@ const Solucoes: React.FC = () => {
             <ul className="space-y-6">
               {topicos1.map((topico, index) => (
                 <li key={index}>
-                  <h3 className="text-2xl font-bold font-baijam text-black mb-2">
+                  <h3 className="text-3xl font-bold font-baijam text-black mb-2">
                     {topico.titulo}
                   </h3>
                   <p className="text-lg font-medium font-baijam text-black">
@@ -88,7 +88,7 @@ const Solucoes: React.FC = () => {
             <ul className="space-y-6">
               {topicos2.map((topico, index) => (
                 <li key={index}>
-                  <h3 className="text-2xl font-bold font-baijam text-black mb-2">
+                  <h3 className="text-3xl font-bold font-baijam text-black mb-2">
                     {topico.titulo}
                   </h3>
                   <p className="text-lg font-medium font-dmsans text-black">

@@ -23,7 +23,7 @@ const Footer: React.FC = () => {
             </span>
           </div>
           <div className="flex flex-col gap-3 mt-4">
-            <Link href="https://wa.me/5548999999999" passHref legacyBehavior>
+            <Link href="https://api.whatsapp.com/send/?phone=5548999999999&text&type=phone_number&app_absent=0" target="_blank" passHref legacyBehavior>
               <a target="_blank" className="flex items-center gap-2 text-white">
                 <div className="py-2 px-2 rounded-full bg-white">
                   <FaWhatsapp className="text-black" />
@@ -34,7 +34,7 @@ const Footer: React.FC = () => {
               </a>
             </Link>
             <Link
-              href="https://www.instagram.com/legassehome"
+              href="https://www.instagram.com/legassehome?igsh=NmNwMW4yeGh4OHhz"
               passHref
               legacyBehavior
             >
@@ -51,7 +51,7 @@ const Footer: React.FC = () => {
               </a>
             </Link>
             <Link
-              href="https://www.instagram.com/legasseenergia"
+              href="https://www.instagram.com/legasseenergia?igsh=MWU2NXB3emNjM2NoMA=="
               passHref
               legacyBehavior
             >

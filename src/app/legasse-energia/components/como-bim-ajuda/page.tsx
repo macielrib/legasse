@@ -6,7 +6,7 @@ const ComoBimAjuda = () => {
      <section className="bg-black py-12" id="modelagem-bim">
 <Reveal>
 <div className="container mx-auto px-6 text-left">
-          <h2 className="text-4xl md:text-5xl font-baijam font-bold text-white mb-20 md:px-12">
+          <h2 className="text-4xl md:text-6xl font-baijam font-bold text-white mb-20 md:px-12">
             E como o <span className="text-[#F9BC0B]">BIM</span> pode ajudar?
           </h2>
 

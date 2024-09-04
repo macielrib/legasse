@@ -48,7 +48,7 @@ const ProjetosEletricos: React.FC = () => {
     <div className="container mx-auto px-6 md:px-12 flex flex-col md:flex-row items-start gap-12">
           {/* Texto e Tópicos à Esquerda */}
           <div className="md:w-1/2">
-            <h2 className="text-4xl md:text-5xl font-bold font-baijam text-black mb-16">
+            <h2 className="text-4xl md:text-6xl font-bold font-baijam text-black mb-16">
               Projetos elétricos
             </h2>
 
@@ -86,7 +86,7 @@ const ProjetosEletricos: React.FC = () => {
      <div className="container mx-auto px-6 md:px-12 flex flex-col md:flex-row-reverse items-start gap-12">
           {/* Texto e Tópicos à Direita */}
           <div className="md:w-7/12">
-            <h2 className="text-4xl md:text-5xl font-bold font-baijam text-black mb-6">
+            <h2 className="text-4xl md:text-6xl font-bold font-baijam text-black mb-6">
               Telecomunicação e <span className="text-[#F9BC0B]">automação</span>
             </h2>
 

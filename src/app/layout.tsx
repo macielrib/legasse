@@ -3,7 +3,8 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
-import Script from "next/script"; // Importa o componente Script
+import Script from "next/script";
+import WhatsappButton from "./components/WhatsappButton"; // Importa o botão do WhatsApp
 
 import "swiper/css";
 import "swiper/css/navigation";
@@ -66,9 +67,10 @@ export default function RootLayout({
         <Navbar />
         {children}
         <Footer />
+        <WhatsappButton /> 
         <Script
           src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"
-          strategy="lazyOnload" // Carrega o script de forma assíncrona após o carregamento da página
+          strategy="lazyOnload"
         />
       </body>
     </html>

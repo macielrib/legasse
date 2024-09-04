@@ -10,19 +10,16 @@ const OQueFazemos: React.FC = () => {
       titulo: "Consultoria em Energia Solar",
       descricao:
         "Orientação especializada sobre soluções solares adequadas, viabilidade do projeto e otimização de desempenho.",
-      destaque: "Consultoria",
     },
     {
       titulo: "Planejamento de Projetos Solares",
       descricao:
         "Elaboração de planos detalhados para instalação de sistemas solares, considerando a estrutura e necessidades específicas do cliente.",
-      destaque: "Planejamento",
     },
     {
       titulo: "Instalação de Sistemas Solares",
       descricao:
         "Implementação completa de painéis solares, incluindo montagem, configuração e integração com a rede elétrica.",
-      destaque: "Instalação",
     },
   ];
 
@@ -31,25 +28,21 @@ const OQueFazemos: React.FC = () => {
       titulo: "Monitoramento de Desempenho",
       descricao:
         "Acompanhamento contínuo da performance do sistema para identificar e resolver rapidamente quaisquer problemas.",
-      destaque: "Monitoramento",
     },
     {
       titulo: "Manutenção de Sistemas Solares",
       descricao:
         "Serviços regulares e corretivos para garantir o desempenho ideal dos sistemas solares.",
-      destaque: "Manutenção",
     },
     {
       titulo: "Análise de Economia e Financiamento",
       descricao:
         "Avaliação de economia potencial e opções de financiamento para tornar a energia solar mais acessível.",
-      destaque: "Economia",
     },
     {
       titulo: "Certificação e Conformidade",
       descricao:
         "Garantia de que todos os sistemas atendem às normas e regulamentações locais.",
-      destaque: "Certificação",
     },
   ];
 
@@ -61,7 +54,7 @@ const OQueFazemos: React.FC = () => {
           <div className="container mx-auto px-6 md:px-12 flex flex-col md:flex-row items-start gap-12">
             {/* Texto e Tópicos à Esquerda */}
             <div className="md:w-1/2">
-              <h2 className="text-4xl md:text-5xl font-bold font-baijam text-black mb-16">
+              <h2 className="text-4xl md:text-6xl font-bold font-baijam text-black mb-16">
                 O que <span className="text-yellow-500">fazemos?</span>
               </h2>
 
@@ -69,8 +62,7 @@ const OQueFazemos: React.FC = () => {
                 {topicos1.map((topico, index) => (
                   <li key={index}>
                     <h3 className="text-2xl font-bold font-baijam text-black mb-2">
-                      <span className="text-yellow-500">{topico.destaque}</span>{" "}
-                      {topico.titulo.replace(topico.destaque, "")}
+                      {topico.titulo}
                     </h3>
                     <p className="text-lg font-medium font-dmsans text-black">
                       {topico.descricao}
@@ -104,8 +96,7 @@ const OQueFazemos: React.FC = () => {
                 {topicos2.map((topico, index) => (
                   <li key={index}>
                     <h3 className="text-2xl font-bold font-baijam text-black mb-2">
-                      <span className="text-yellow-500">{topico.destaque}</span>{" "}
-                      {topico.titulo.replace(topico.destaque, "")}
+                      {topico.titulo}
                     </h3>
                     <p className="text-lg font-medium font-dmsans text-black">
                       {topico.descricao}
@@ -136,8 +127,6 @@ const OQueFazemos: React.FC = () => {
           </Link>
         </div>
       </section>
-
-      {/* Botão Centralizado */}
     </>
   );
 };

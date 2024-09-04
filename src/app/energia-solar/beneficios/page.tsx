@@ -11,7 +11,7 @@ const Beneficios: React.FC = () => {
       <Reveal>
         <div className="container mx-auto flex flex-col md:flex-row items-center justify-center gap-12">
           <div className="w-full flex flex-col items-start">
-            <h2 className="text-4xl md:text-5xl font-baijam font-bold mb-12">
+            <h2 className="text-4xl md:text-6xl font-baijam font-bold mb-12">
               Os{" "}
               <span className="text-yellow-500 inline-flex items-center gap-2">
                 benefícios
