@@ -43,7 +43,7 @@ const ProjetosEletricos: React.FC = () => {
   return (
     <>
       {/* Seção Projetos Elétricos */}
-      <section className="py-28 bg-white" id="projetos-eletricos">
+      <section className="py-28 bg-white" id="projetos-eletrico">
     <Reveal>
     <div className="container mx-auto px-6 md:px-12 flex flex-col md:flex-row items-start gap-12">
           {/* Texto e Tópicos à Esquerda */}

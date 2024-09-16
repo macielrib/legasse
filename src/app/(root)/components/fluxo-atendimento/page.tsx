@@ -97,7 +97,10 @@ const FluxoAtendimento: React.FC = () => {
               {/* Segunda Linha */}
               <div className="flex flex-col items-start relative mt-10">
                 <div className="flex items-center gap-5">
-                  <span className="text-[#F9BC0B] font-baijam font-semibold text-2xl lg:text-3xl xl:text-4xl">
+                <span className="text-[#F9BC0B] font-baijam font-semibold text-2xl lg:text-3xl xl:text-4xl sm:block md:hidden">
+                    5.
+                  </span>
+                  <span className="text-[#F9BC0B] font-baijam font-semibold text-2xl lg:text-3xl xl:text-4xl sm:hidden md:block">
                     8.
                   </span>
                   <Image
@@ -115,7 +118,10 @@ const FluxoAtendimento: React.FC = () => {
 
               <div className="flex flex-col items-start mt-10">
                 <div className="flex items-center gap-5">
-                  <span className="text-[#F9BC0B] font-baijam font-semibold text-2xl lg:text-3xl xl:text-4xl">
+                <span className="text-[#F9BC0B] font-baijam font-semibold text-2xl lg:text-3xl xl:text-4xl sm:block md:hidden">
+                    6.
+                  </span>
+                  <span className="text-[#F9BC0B] font-baijam font-semibold text-2xl lg:text-3xl xl:text-4xl sm:hidden md:block">
                     7.
                   </span>
                   <Image
@@ -133,7 +139,10 @@ const FluxoAtendimento: React.FC = () => {
 
               <div className="flex flex-col items-start mt-10">
                 <div className="flex items-center gap-5">
-                  <span className="text-[#F9BC0B] font-baijam font-semibold text-2xl lg:text-3xl xl:text-4xl">
+                <span className="text-[#F9BC0B] font-baijam font-semibold text-2xl lg:text-3xl xl:text-4xl sm:block md:hidden">
+                    7.
+                  </span>
+                  <span className="text-[#F9BC0B] font-baijam font-semibold text-2xl lg:text-3xl xl:text-4xl sm:hidden md:block">
                     6.
                   </span>
                   <Image
@@ -151,7 +160,10 @@ const FluxoAtendimento: React.FC = () => {
 
               <div className="flex flex-col items-start relative mt-10">
                 <div className="flex items-center gap-5">
-                  <span className="text-[#F9BC0B] font-baijam font-semibold text-2xl lg:text-3xl xl:text-4xl">
+                <span className="text-[#F9BC0B] font-baijam font-semibold text-2xl lg:text-3xl xl:text-4xl sm:block md:hidden">
+                    8.
+                  </span>
+                  <span className="text-[#F9BC0B] font-baijam font-semibold text-2xl lg:text-3xl xl:text-4xl sm:hidden md:block">
                     5.
                   </span>
                   <Image
