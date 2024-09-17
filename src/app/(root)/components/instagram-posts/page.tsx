@@ -17,11 +17,11 @@ const InstagramSection: React.FC = () => {
     try {
       const homeResponse = await fetch('https://legasse-api.vercel.app/media/graph/home');
       const homeData = await homeResponse.json();
-      setLegasseHomePosts(homeData.data.slice(0, 6)); 
+      setLegasseHomePosts(homeData.media.slice(0, 6)); 
 
       const energyResponse = await fetch('https://legasse-api.vercel.app/media/graph/energy');
       const energyData = await energyResponse.json();
-      setLegasseEnergyPosts(energyData.data.slice(0, 6));
+      setLegasseEnergyPosts(energyData.media.slice(0, 6));
     } catch (error) {
       console.error("Erro ao buscar posts do Instagram:", error);
     }
