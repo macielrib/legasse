@@ -12,37 +12,14 @@ interface InstagramPost {
 const InstagramSection: React.FC = () => {
   const [legasseHomePosts, setLegasseHomePosts] = useState<InstagramPost[]>([]);
   const [legasseEnergyPosts, setLegasseEnergyPosts] = useState<InstagramPost[]>([]);
-  const [accessTokenHome, setAccessTokenHome] = useState<string | null>(null);
-  const [accessTokenEnergy, setAccessTokenEnergy] = useState<string | null>(null);
-
-  // Função para buscar tokens atualizados da API
-  const fetchAccessTokens = async () => {
-    try {
-      const responseHome = await fetch('https://legasse-api.vercel.app/media/graph/home');
-      const dataHome = await responseHome.json();
-      setAccessTokenHome(dataHome.accessToken); // Atualize a chave de acordo com a resposta da API
-
-      const responseEnergy = await fetch('https://legasse-api.vercel.app/media/graph/energy');
-      const dataEnergy = await responseEnergy.json();
-      setAccessTokenEnergy(dataEnergy.accessToken); // Atualize a chave de acordo com a resposta da API
-    } catch (error) {
-      console.error("Erro ao buscar tokens de acesso:", error);
-    }
-  };
 
   const fetchInstagramPosts = async () => {
-    if (!accessTokenHome || !accessTokenEnergy) return; // Verificar se os tokens estão disponíveis
-
     try {
-      const homeResponse = await fetch(
-        `https://graph.instagram.com/me/media?fields=id,media_type,media_url,thumbnail_url,permalink&access_token=${accessTokenHome}`
-      );
+      const homeResponse = await fetch('https://legasse-api.vercel.app/media/graph/home');
       const homeData = await homeResponse.json();
       setLegasseHomePosts(homeData.data.slice(0, 6)); 
 
-      const energyResponse = await fetch(
-        `https://graph.instagram.com/me/media?fields=id,media_type,media_url,thumbnail_url,permalink&access_token=${accessTokenEnergy}`
-      );
+      const energyResponse = await fetch('https://legasse-api.vercel.app/media/graph/energy');
       const energyData = await energyResponse.json();
       setLegasseEnergyPosts(energyData.data.slice(0, 6));
     } catch (error) {
@@ -51,7 +28,7 @@ const InstagramSection: React.FC = () => {
   };
 
   useEffect(() => {
-    fetchAccessTokens().then(() => fetchInstagramPosts());
+    fetchInstagramPosts();
   }, []);
 
   const renderPost = (post: InstagramPost) => {
@@ -101,7 +78,6 @@ const InstagramSection: React.FC = () => {
               </span>
             </div>
             <div className="grid grid-cols-2 gap-4">
-              {/* Renderizando os posts de Legasse Energia */}
               {legasseEnergyPosts.map(renderPost)}
             </div>
           </div>
@@ -117,7 +93,6 @@ const InstagramSection: React.FC = () => {
               </span>
             </div>
             <div className="grid grid-cols-2 gap-4">
-              {/* Renderizando os posts de Legasse Home */}
               {legasseHomePosts.map(renderPost)}
             </div>
           </div>
