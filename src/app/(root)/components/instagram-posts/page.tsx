@@ -1,21 +1,68 @@
-"use client";
+import { useEffect, useState } from 'react';
+import Image from 'next/image';
 
-import { Reveal } from "@/app/components/RevealScroll";
-import Image from "next/image";
-import { FaInstagram } from "react-icons/fa";
+interface InstagramPost {
+  id: string;
+  media_type: 'IMAGE' | 'VIDEO';
+  media_url: string;
+  thumbnail_url?: string;
+  permalink: string;
+}
 
 const InstagramSection: React.FC = () => {
-  return (
+  const [legasseHomePosts, setLegasseHomePosts] = useState<InstagramPost[]>([]);
+  const [legasseEnergyPosts, setLegasseEnergyPosts] = useState<InstagramPost[]>([]);
 
-<section className="bg-white py-16 px-6 md:px-14">
-<Reveal>
-      <div className="container mx-auto ">
+  const fetchInstagramPosts = async () => {
+    try {
+      const homeResponse = await fetch("https://graph.instagram.com/me/media?fields=id,media_type,media_url,thumbnail_url,permalink&access_token=IGQWRQLW91OS1zaXZAwcWxTUmtlZAVhEdm4zNXM4MmxrNERTWDA3enZAaMU0wcW9lczhSUl85ZAjZAmdklsMEVDR1RMSC1UN09yc0dWYjU5aEhFMC05Ukl0Rkp3c1pKRTh6WGR2RE82bmZArdEJPdwZDZD");
+      const homeData = await homeResponse.json();
+      setLegasseHomePosts(homeData.data.slice(0, 6));
+
+      const energyResponse = await fetch("https://graph.instagram.com/me/media?fields=id,media_type,media_url,thumbnail_url,permalink&access_token=IGQWRQX0RuYjF3MC1QS1RhQXAwX19FZAzgzM254V1lHeWV6ZAVR6VDZA6RkR2U3MyVTNZAMWdTUWc1VXdNQldjZAWc2OUVaRy1EaFBYZAHFQUlpxSXI4a2VySThnQVZAjYVdUbzNweTBPb3NqTVFxZAwZDZD");
+      const energyData = await energyResponse.json();
+      setLegasseEnergyPosts(energyData.data.slice(0, 6));
+    } catch (error) {
+      console.error("Erro ao buscar posts do Instagram:", error);
+    }
+  };
+
+  useEffect(() => {
+    fetchInstagramPosts();
+  }, []);
+
+  const renderPost = (post: InstagramPost) => {
+    return (
+      <a href={post.permalink} target="_blank" rel="noopener noreferrer" key={post.id} className="relative block w-full h-0 pb-[100%] overflow-hidden">
+        {post.media_type === 'VIDEO' ? (
+          <video
+            src={post.media_url}
+            controls
+            className="absolute top-0 left-0 w-full h-full object-cover"
+          />
+        ) : (
+          <Image
+            src={post.media_url}
+            alt={`Post ${post.id}`}
+            layout="fill"
+            objectFit="cover"
+            className="absolute top-0 left-0"
+          />
+        )}
+      </a>
+    );
+  };
+
+  return (
+    <section className="bg-white py-16 px-6 md:px-14">
+      <div className="container mx-auto">
         <div className="text-left mb-12">
           <h2 className="text-4xl md:text-7xl font-baijam font-bold mb-4">
-            Conecte-se conosco:<br/><span className="text-yellow-500">Siga-nos</span> no instagram!
+            Conecte-se conosco:<br />
+            <span className="text-yellow-500">Siga-nos</span> no instagram!
           </h2>
           <p className="text-md md:text-xl font-dmsans font-medium text-black max-w-2xl">
-            Confira as últimas novidades e acompanhe nossos projetos<br/> nas nossas <b>contas no Instagram.</b>
+            Confira as últimas novidades e acompanhe nossos projetos<br /> nas nossas <b>contas no Instagram.</b>
           </p>
         </div>
 
@@ -23,113 +70,37 @@ const InstagramSection: React.FC = () => {
           {/* Legasse Energia */}
           <div className="space-y-8">
             <div className="flex items-center space-x-4">
-            <span className="py-2 p-2 rounded-md bg-neutral-900"><Image src={'/logo.png'} width={18} height={18} alt="Logo Instagram"/></span>
-            <span className="text-black font-baijam text-2xl font-bold"><a href="https://instagram.com/legasseenergia" target="_blank" className="transition duration-300 hover:translate-x-1 hover:text-yellow-500">@legasseenergia</a></span>
+              <span className="py-2 p-2 rounded-md bg-neutral-900">
+                <Image src={'/logo.png'} width={18} height={18} alt="Logo Instagram" />
+              </span>
+              <span className="text-black font-baijam text-2xl font-bold">
+                <a href="https://instagram.com/legasseenergia" target="_blank" rel="noopener noreferrer" className="transition duration-300 hover:translate-x-1 hover:text-yellow-500">@legasseenergia</a>
+              </span>
             </div>
             <div className="grid grid-cols-2 gap-4">
-              {/* 6 Imagens - todas usando a mesma imagem */}
-              <Image
-                src="/assets/home/legasse-fachada.png"
-                alt="Post 1"
-                width={300}
-                height={300}
-                className="w-full h-auto object-cover transition duration-300 hover:-translate-y-2"
-              />
-              <Image
-                src="/assets/home/legasse-fachada.png"
-                alt="Post 2"
-                width={300}
-                height={300}
-                className="w-full h-auto object-cover transition duration-300 hover:-translate-y-2"
-              />
-              <Image
-                src="/assets/home/legasse-fachada.png"
-                alt="Post 3"
-                width={300}
-                height={300}
-                className="w-full h-auto object-cover transition duration-300 hover:-translate-y-2"
-              />
-              <Image
-                src="/assets/home/legasse-fachada.png"
-                alt="Post 4"
-                width={300}
-                height={300}
-                className="w-full h-auto object-cover transition duration-300 hover:-translate-y-2"
-              />
-              <Image
-                src="/assets/home/legasse-fachada.png"
-                alt="Post 5"
-                width={300}
-                height={300}
-                className="w-full h-auto object-cover transition duration-300 hover:-translate-y-2"
-              />
-              <Image
-                src="/assets/home/legasse-fachada.png"
-                alt="Post 6"
-                width={300}
-                height={300}
-                className="w-full h-auto object-cover transition duration-300 hover:-translate-y-2"
-              />
+              {/* Renderizando os posts de Legasse Energia */}
+              {legasseEnergyPosts.map(renderPost)}
             </div>
           </div>
 
           {/* Legasse Home */}
           <div className="space-y-8">
             <div className="flex items-center space-x-2">
-              <span className="py-2 p-2 rounded-md bg-black"><Image src={'/logo.png'} width={18} height={18} alt="Logo Instagram"/></span>
-              <span className="text-black font-baijam text-2xl font-bold"><a href="https://instagram.com/legassehome" target="_blank" className="transition duration-300 hover:translate-x-1 hover:text-yellow-500">@legassehome</a></span>
-              </div>
+              <span className="py-2 p-2 rounded-md bg-black">
+                <Image src={'/logo.png'} width={18} height={18} alt="Logo Instagram" />
+              </span>
+              <span className="text-black font-baijam text-2xl font-bold">
+                <a href="https://instagram.com/legassehome" target="_blank" rel="noopener noreferrer" className="transition duration-300 hover:translate-x-1 hover:text-yellow-500">@legassehome</a>
+              </span>
+            </div>
             <div className="grid grid-cols-2 gap-4">
-              {/* 6 Imagens - todas usando a mesma imagem */}
-              <Image
-                src="/assets/home/legasse-fachada.png"
-                alt="Post 1"
-                width={300}
-                height={300}
-                className="w-full h-auto object-cover transition duration-300 hover:-translate-y-2"
-              />
-              <Image
-                src="/assets/home/legasse-fachada.png"
-                alt="Post 2"
-                width={300}
-                height={300}
-                className="w-full h-auto object-cover transition duration-300 hover:-translate-y-2"
-              />
-              <Image
-                src="/assets/home/legasse-fachada.png"
-                alt="Post 3"
-                width={300}
-                height={300}
-                className="w-full h-auto object-cover transition duration-300 hover:-translate-y-2"
-              />
-              <Image
-                src="/assets/home/legasse-fachada.png"
-                alt="Post 4"
-                width={300}
-                height={300}
-                className="w-full h-auto object-cover transition duration-300 hover:-translate-y-2"
-              />
-              <Image
-                src="/assets/home/legasse-fachada.png"
-                alt="Post 5"
-                width={300}
-                height={300}
-                className="w-full h-auto object-cover transition duration-300 hover:-translate-y-2"
-              />
-              <Image
-                src="/assets/home/legasse-fachada.png"
-                alt="Post 6"
-                width={300}
-                height={300}
-                className="w-full h-auto object-cover transition duration-300 hover:-translate-y-2"
-              />
+              {/* Renderizando os posts de Legasse Home */}
+              {legasseHomePosts.map(renderPost)}
             </div>
           </div>
         </div>
       </div>
-      </Reveal>
     </section>
-
   );
 };
 

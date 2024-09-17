@@ -12,6 +12,9 @@ const config: Config = {
       dmsans: ['DM Sans', 'sans-serif'],
     },
     extend: {
+      screens: {
+        'xs': '300px', 
+      },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
