@@ -3,6 +3,7 @@
 import { useQuery } from "@tanstack/react-query";
 import axios from "axios";
 import Image from "next/image";
+import { QueryClient, QueryClientProvider } from "react-query";
 
 const getGraphHome = async () => {
   const response = await axios.get('https://legasse-api.vercel.app/media/graph/home');
@@ -50,9 +51,11 @@ const InstagramSection: React.FC = () => {
   // useEffect(() => {
   //   fetchInstagramPosts();
   // }, []);
+  const queryClient = new QueryClient();
 
   const renderPost = (post: InstagramPost) => {
     return (
+   
       <a
         href={post.permalink}
         target="_blank"
@@ -79,6 +82,7 @@ const InstagramSection: React.FC = () => {
   };
 
   return (
+    <QueryClientProvider client={queryClient}>
     <section className="bg-white py-16 px-6 md:px-14">
       <div className="container mx-auto">
         <div className="text-left mb-12">
@@ -150,6 +154,7 @@ const InstagramSection: React.FC = () => {
         </div>
       </div>
     </section>
+    </QueryClientProvider>
   );
 };
 

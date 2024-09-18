@@ -1,11 +1,13 @@
-// src/app/layout.tsx
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
+import Script from "next/script";
+import WhatsappButton from "./components/WhatsappButton"; // Importa o botão do WhatsApp
 
 import "swiper/css";
 import "swiper/css/navigation";
-import ClientWrapper from "./ClientWrapper";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -62,9 +64,14 @@ export default function RootLayout({
         />
       </head>
       <body className={inter.className}>
-        <ClientWrapper>
-          {children}
-        </ClientWrapper>
+        <Navbar />
+        {children}
+        <Footer />
+        <WhatsappButton /> 
+        <Script
+          src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"
+          strategy="lazyOnload"
+        />
       </body>
     </html>
   );
