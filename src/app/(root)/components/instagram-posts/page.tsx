@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { useEffect, useState } from "react";
 
 interface InstagramPost {
@@ -54,11 +55,12 @@ const InstagramSection: React.FC = () => {
             className="absolute top-0 left-0 w-full h-full object-cover"
           />
         ) : (
-          <img
+          <Image
             src={post.media_url}
+            overrideSrc={post.media_url}
             alt={`Post ${post.id}`}
-            // layout="fill"
-            // objectFit="cover"
+            layout="fill"
+            objectFit="cover"
             className="absolute top-0 left-0"
           />
         )}
