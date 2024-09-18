@@ -56,6 +56,7 @@ const InstagramSection: React.FC = () => {
           />
         ) : (
           <Image
+            unoptimized
             src={post.media_url}
             overrideSrc={post.media_url}
             alt={`Post ${post.id}`}
