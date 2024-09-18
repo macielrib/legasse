@@ -1,18 +1,11 @@
-"use client"
-
+// src/app/layout.tsx
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
-import Navbar from "./components/Navbar";
-import Footer from "./components/Footer";
-import Script from "next/script";
-import WhatsappButton from "./components/WhatsappButton";
-
-import { QueryClient, QueryClientProvider } from 'react-query'; // Importa QueryClient e QueryClientProvider
-import { useState } from 'react'; // Importa useState para manter o estado do QueryClient
 
 import "swiper/css";
 import "swiper/css/navigation";
+import ClientWrapper from "./ClientWrapper";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -60,9 +53,6 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  // Cria o QueryClient uma vez ao inicializar o layout
-  const [queryClient] = useState(() => new QueryClient());
-
   return (
     <html lang="pt-br">
       <head>
@@ -72,17 +62,9 @@ export default function RootLayout({
         />
       </head>
       <body className={inter.className}>
-        {/* Envolvendo a aplicação com o QueryClientProvider */}
-        <QueryClientProvider client={queryClient}>
-          <Navbar />
+        <ClientWrapper>
           {children}
-          <Footer />
-          <WhatsappButton />
-          <Script
-            src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"
-            strategy="lazyOnload"
-          />
-        </QueryClientProvider>
+        </ClientWrapper>
       </body>
     </html>
   );
