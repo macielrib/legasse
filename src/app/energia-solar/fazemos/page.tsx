@@ -109,7 +109,7 @@ const OQueFazemos: React.FC = () => {
             {/* Imagem à Esquerda */}
             <div className="md:w-1/2 flex justify-center items-center transition duration-300 hover:scale-105">
               <Image
-                src="/energia-solar/assets/segunda.jpg"
+                src="/energia-solar/assets/segund.jpg"
                 alt="Monitoramento e Manutenção"
                 width={600}
                 height={400}
