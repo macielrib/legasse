@@ -75,8 +75,8 @@ const OQueFazemos: React.FC = () => {
             {/* Imagem à Direita */}
             <div className="md:w-1/2 flex justify-center items-center transition duration-300 hover:scale-105">
               <Image
-                src="/legasse-home/piso-aquecido/pisoaquecido01.png"
-                alt="Piso Aquecido 1"
+                src="/legasse-home/energia-solar/segunda.jpg"
+                alt="Energia Solar 2"
                 width={600}
                 height={400}
                 className="object-cover w-full h-auto rounded-xl"
@@ -109,7 +109,7 @@ const OQueFazemos: React.FC = () => {
             {/* Imagem à Esquerda */}
             <div className="md:w-1/2 flex justify-center items-center transition duration-300 hover:scale-105">
               <Image
-                src="/legasse-home/piso-aquecido/pisoaquecido02.png"
+                src="/legasse-home/energia-solar/usina.jpg"
                 alt="Monitoramento e Manutenção"
                 width={600}
                 height={400}

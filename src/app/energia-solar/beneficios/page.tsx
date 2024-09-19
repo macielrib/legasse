@@ -44,7 +44,7 @@ const Beneficios: React.FC = () => {
           </div>
           <div className="md:w-[98%] flex justify-center items-center transition duration-300 hover:scale-105">
               <Image
-              src="/energia-solar/assets/vantagens.png"
+              src="/energia-solar/assets/primeira.jpg"
               alt="Legasse Fachada"
                 width={600}
                 height={400}
