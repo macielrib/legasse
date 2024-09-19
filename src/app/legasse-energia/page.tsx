@@ -15,7 +15,7 @@ import StatsSection from "../components/StatsSection";
 const LegasseEnergia: React.FC = () => {
   return (
     <>
-      <section
+      <section id="moledagem-bim"
         className="relative bg-cover bg-center py-20 md:py-40"
         style={{
           backgroundImage: "url('/legasse-energia/assets/hero-bg.png')",

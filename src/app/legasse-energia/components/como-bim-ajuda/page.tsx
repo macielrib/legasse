@@ -3,7 +3,7 @@ import { Reveal } from "@/app/components/RevealScroll"
 const ComoBimAjuda = () => {
   return (
     <>
-     <section className="bg-black py-12" id="modelagem-bim">
+     <section className="bg-black py-12" >
 <Reveal>
 <div className="container mx-auto px-6 text-left">
           <h2 className="text-4xl md:text-7xl font-baijam font-bold text-white mb-20 md:px-12">

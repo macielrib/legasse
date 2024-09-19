@@ -44,7 +44,7 @@ const Navbar: React.FC = () => {
             { name: "Energia Solar", path: "/energia-solar" },
             {
               name: "Projeto Elétrico",
-              path: "/legasse-energia/#projetos-eletrico",
+              path: "/legasse-energia/#moledagem-bim",
             },
             {
               name: "Telecomunicação e Automação",

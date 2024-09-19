@@ -122,7 +122,7 @@ const Footer: React.FC = () => {
               </Link>
             </li>
             <li>
-              <Link href="/legasse-energia/#projetos-eletricos" passHref legacyBehavior>
+              <Link href="/legasse-energia/#modelagem-bim" passHref legacyBehavior>
                 <a className="text-xl font-baijam font-medium hover:text-yellow-500 transition-colors">
                   Projetos Elétricos
                 </a>
